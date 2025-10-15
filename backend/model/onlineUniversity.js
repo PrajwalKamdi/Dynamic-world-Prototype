@@ -19,4 +19,5 @@ const onlineUniversitySchema = new mongoose.Schema({
 
 }, { timestamps: true });
 
-export const onlineUniversity = mongoose.model("onlineUniversity", onlineUniversitySchema);
+ const onlineUniversity = mongoose.model("onlineUniversity", onlineUniversitySchema);
+ export default onlineUniversity

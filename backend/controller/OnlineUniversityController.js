@@ -1,5 +1,5 @@
 // controllers/onlineUniversityController.js
-import { onlineUniversity } from "../model/OnlineUniversity.js";
+import onlineUniversity from '../model/OnlineUniversity.js'
 
 // Controller to insert many universities
 export const insertManyUniversities = async (req, res) => {
@@ -48,7 +48,7 @@ export const getUniversityById = async (req, res) => {
     const data = await onlineUniversity.findOne({ universityName });
     res.status(200).json({
       success: true,
-      data:data,
+      data: data,
       message: "University Fetched Successfully!"
     })
   } catch (error) {
