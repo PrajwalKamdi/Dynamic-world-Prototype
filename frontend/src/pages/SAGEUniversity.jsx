@@ -1,5 +1,5 @@
 import React from 'react'
-import SAGEUniversity01 from '../components/SageUniversity01'
+import SAGEUniversity01 from '../components/SAGEUniversity01'
 import SAGEUniversity02 from '../components/SAGEUniversity02'
 import SAGEUniversity03 from '../components/SAGEUniversity03'
 import SAGEUniversity04 from '../components/SAGEUniversity04'
