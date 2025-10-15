@@ -1,5 +1,5 @@
 // controllers/onlineUniversityController.js
-import onlineUniversity from '../model/OnlineUniversity.js'
+import onlineUniversity from '../model/onlineUniversity.js'
 
 // Controller to insert many universities
 export const insertManyUniversities = async (req, res) => {
