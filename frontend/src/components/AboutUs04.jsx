@@ -1,5 +1,5 @@
 import React from "react";
-import founderImage from "../assets/founderImage.jpg"; // Replace with actual image path
+import FounderImage from "../assets/FounderImage.jpg"; // Replace with actual image path
 
 const AboutUs04 = () => {
   return (
@@ -52,7 +52,7 @@ const AboutUs04 = () => {
         {/* Image Section */}
         <div className="flex-1 flex justify-center">
           <img
-            src={founderImage}
+            src={FounderImage}
             alt="Founder"
             className="w-full max-w-sm rounded-lg shadow-lg object-cover"
           />
