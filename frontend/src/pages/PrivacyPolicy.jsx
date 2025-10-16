@@ -2,13 +2,11 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="w-full px-20 py-24 bg-gray-200 text-gray-800">
-      <h1 className="text-3xl font-bold text-center mb-8">Privacy Policy</h1>
-      <p className="text-sm text-gray-500 text-center mb-16">
-        Last Update on: <span className="font-medium">01 DECEMBER 2024</span>
-      </p>
+    <div className="w-full px-5  lg:px-20 lg:py-24 py-5  bg-gray-200 text-gray-800">
+      <h1 className="text-3xl font-bold text-center mb-2 lg:mb-5">Privacy Policy</h1>
+     
 
-      <section className="pb-16">
+      <section className="lg:pb-16 my-2 lg:my-0">
         <h2 className="text-xl font-semibold pb-4">Have Questions?</h2>
         <p className="pb-4">
           Dynamic World Educational Consultancy (referred to as “we,” “our,” or
@@ -28,7 +26,7 @@ const PrivacyPolicy = () => {
         </p>
       </section>
 
-      <section className="pb-16">
+      <section className="lg:pb-16 my-2 lg:my-0">
         <h2 className="text-xl font-semibold pb-4">
           1. Information We Collect
         </h2>
@@ -67,7 +65,7 @@ const PrivacyPolicy = () => {
         </div>
       </section>
 
-      <section className="pb-16">
+      <section className="lg:pb-16 my-2 lg:my-0">
         <h2 className="text-xl font-semibold pb-4">
           2. How We Use Your Information
         </h2>
@@ -85,7 +83,7 @@ const PrivacyPolicy = () => {
         </ul>
       </section>
 
-      <section className="pb-16">
+      <section className="lg:pb-16 my-2 lg:my-0">
         <h2 className="text-xl font-semibold pb-4">
           3. Sharing of Information
         </h2>
@@ -111,7 +109,7 @@ const PrivacyPolicy = () => {
         </ul>
       </section>
 
-      <section className="pb-16">
+      <section className="lg:pb-16 my-2 lg:my-0">
         <h2 className="text-xl font-semibold pb-4">4. Data Security</h2>
         <ul className="list-disc list-inside space-y-1 ml-4 pb-4">
           <li>Secure storage of physical documents at our offices.</li>
@@ -125,7 +123,7 @@ const PrivacyPolicy = () => {
         </p>
       </section>
 
-      <section className="pb-16">
+      <section className="lg:pb-16 my-2 lg:my-0">
         <h2 className="text-xl font-semibold pb-4">
           5. Retention of Information
         </h2>
@@ -137,7 +135,7 @@ const PrivacyPolicy = () => {
         </p>
       </section>
 
-      <section className="pb-16">
+      <section className="lg:pb-16 my-2 lg:my-0">
         <h2 className="text-xl font-semibold pb-4">6. Your Rights</h2>
         <ul className="list-disc list-inside space-y-1 ml-4 pb-4">
           <li>Access: Request a copy of your personal data.</li>
@@ -168,7 +166,7 @@ const PrivacyPolicy = () => {
         </p>
       </section>
 
-      <section className="pb-16">
+      <section className="lg:pb-16 my-2 lg:my-0">
         <h2 className="text-xl font-semibold pb-4">7. Cookies Policy</h2>
         <p>
           Our website uses cookies to improve user experience and track usage
@@ -177,7 +175,7 @@ const PrivacyPolicy = () => {
         </p>
       </section>
 
-      <section className="pb-16">
+      <section className="lg:pb-16 my-2 lg:my-0">
         <h2 className="text-xl font-semibold pb-4">8. Third-Party Links</h2>
         <p>
           Our website may include links to third-party websites. We are not
@@ -186,7 +184,7 @@ const PrivacyPolicy = () => {
         </p>
       </section>
 
-      <section className="pb-16">
+      <section className="lg:pb-16 my-2 lg:my-0">
         <h2 className="text-xl font-semibold pb-4">
           9. Changes to This Policy
         </h2>
@@ -197,7 +195,7 @@ const PrivacyPolicy = () => {
         </p>
       </section>
 
-      <section className="pb-16">
+      <section className="lg:pb-16 my-2 lg:my-0">
         <h2 className="text-xl font-semibold pb-4">10. Contact Us</h2>
         <p className="pb-2">
           Phone:{" "}

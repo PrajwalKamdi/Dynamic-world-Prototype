@@ -30,15 +30,14 @@ export default function EducationCountries({ countryData }) {
 
   // Optional: early return while data is loading
 
-
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 py-12">
+      <div className="max-w-7xl mx-auto px-2 lg:px-4 py-12">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-3">
+          <h1 className="text-2xl lg:text-4xl font-bold text-gray-900 mb-3">
             Study Abroad Destinations
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-sm lg:text-lg text-gray-600">
             Explore world-class education opportunities
           </p>
         </div>
@@ -46,7 +45,7 @@ export default function EducationCountries({ countryData }) {
         <div className="space-y-8">
           <div className="bg-white rounded-lg shadow-sm overflow-hidden">
             {/* Header */}
-            <div className="bg-blue-600 text-white px-8 py-6">
+            <div className="bg-[#3e96f4] text-white lg:px-8  px-2 py-6">
               <div className="flex items-center gap-3 mb-2">
                 <img src={imageUrl} alt="" className="h-10 w-20" />
                 <h2 className="text-3xl font-bold">{countryName}</h2>
@@ -64,7 +63,7 @@ export default function EducationCountries({ countryData }) {
             </div>
 
             {/* Body */}
-            <div className="p-8">
+            <div className="p-2 lg:p-8">
               {/* Education Overview */}
               {toArr(education).length > 0 && (
                 <section className="mb-8">

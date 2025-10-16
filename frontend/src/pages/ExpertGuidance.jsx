@@ -25,10 +25,10 @@ const ExpertGuidance = () => {
   ];
 
   return (
-    <div className="bg-[#EDEEEB] py-12 px-6">
+    <div className="bg-[#EDEEEB] py-12 px-2 lg:px-6">
       {/* Section Header */}
       <div className="text-center mb-10">
-        <h2 className="text-2xl md:text-3xl font-semibold text-[#31393c]">
+        <h2 className="text-xl lg:text-2xl md:text-3xl font-semibold text-[#31393c]">
           Receive Expert Guidance To Make Right Decisions.
         </h2>
         <p className="text-[#31393c] mt-2 text-base md:text-lg">

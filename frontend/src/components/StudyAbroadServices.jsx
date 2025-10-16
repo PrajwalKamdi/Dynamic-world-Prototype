@@ -68,11 +68,11 @@ const StudyAbroadServices = () => {
         <div className="inline-flex items-center gap-2 rounded-full bg-[#EDEEEB] px-3 py-1 text-xs font-semibold text-[#31393C]">
           OUR SERVICES
         </div>
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col lg:flex-row justify-between ">
           <h1 className="mt-3 text-2xl font-bold tracking-tight text-[#31393C] lg:text-3xl">
             End-to-End Guidance for Your Study Abroad Journey
           </h1>
-          <button className="bg-[#3E96F4] p-2 rounded-xl text-white font-semibold hover:scale-105 transition ease-in-out duration-300 hover:cursor-pointer">
+          <button className="bg-[#3E96F4] my-2 p-2 rounded-xl text-white font-semibold hover:scale-105 transition ease-in-out duration-300 hover:cursor-pointer">
             Download Brochure
           </button>
         </div>

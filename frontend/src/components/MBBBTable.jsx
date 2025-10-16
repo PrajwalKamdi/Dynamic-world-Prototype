@@ -1,16 +1,16 @@
 import React from "react";
 import MBBSHeader from "./MBBSHeader";
 
-const MBBBTable = ({tags, subHeading, data }) => {
+const MBBBTable = ({ tags, subHeading, data }) => {
   console.log(data);
   return (
     <div>
       <div className="bg-white rounded-2xl shadow-md overflow-hidden my-6">
         {/* Subheading */}
-        <h1 className="text-2xl font-semibold text-white/90 px-6 py-4 border-b text-center border-gray-200 bg-blue-500">
+        <h1 className="text-xl lg:text-2xl font-semibold text-white/90 px-6 py-4 border-b text-center border-gray-200 bg-blue-500">
           {subHeading}
         </h1>
-        <h1 className="text-sm font-semibold text-[#31393C] px-6 py-4 border-b text-center border-gray-200">
+        <h1 className="text-xs lg:text-sm font-semibold text-[#31393C] px-6 py-4 border-b text-center border-gray-200">
           {tags}
         </h1>
         {/* Table Wrapper for Scroll on Mobile */}
@@ -18,10 +18,10 @@ const MBBBTable = ({tags, subHeading, data }) => {
           <table className="w-full text-left border-collapse">
             <thead className="bg-[#3E96F4] text-white">
               <tr>
-                <th className="px-6 py-3 text-sm font-medium uppercase tracking-wide">
+                <th className="px-2 py-2 lg:px-6 lg:py-4 text-xs lg:text-sm font-medium uppercase tracking-wide">
                   College Name
                 </th>
-                <th className="px-6 py-3 text-sm font-medium uppercase tracking-wide">
+                <th className="px-2 py-2 lg:px-6 lg:py-4 text-xs lg:text-sm  font-medium uppercase tracking-wide">
                   State
                 </th>
               </tr>
@@ -32,10 +32,10 @@ const MBBBTable = ({tags, subHeading, data }) => {
                   key={index}
                   className="border-b border-gray-100 hover:bg-[#EDEEEB]/50 transition"
                 >
-                  <td className="px-6 py-4 text-[#31393C] font-medium">
+                  <td className="px-2 py-2 lg:px-6 lg:py-4 text-xs lg:text-sm  text-[#31393C] font-medium">
                     {item.collegeName}
                   </td>
-                  <td className="px-6 py-4 text-[#31393C]">
+                  <td className="px-2 py-2 lg:px-6 lg:py-4 text-xs lg:text-sm  text-[#31393C]">
                     {item.collegeState}
                   </td>
                 </tr>

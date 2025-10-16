@@ -24,6 +24,9 @@ const DynamicWorldPortal = () => {
   // Track/cancel in-flight request when user clicks quickly
   const reqAbortRef = useRef(null);
 
+  // 🔽 main section ref for smooth scroll
+  const mainSectionRef = useRef(null);
+
   const dedupe = (arr) => Array.from(new Set(arr.filter(Boolean))).sort();
   const tidy = (s) => (typeof s === "string" ? s.trim() : s);
 
@@ -106,6 +109,7 @@ const DynamicWorldPortal = () => {
     ],
     []
   );
+
   const countries = [
     "Austria",
     "Australia",
@@ -121,6 +125,7 @@ const DynamicWorldPortal = () => {
     "Singapure",
     "Sweden",
   ];
+
   const studyAbroad = useMemo(
     () => [
       "Home",
@@ -131,6 +136,7 @@ const DynamicWorldPortal = () => {
     ],
     []
   );
+
   const sidebarData = useMemo(
     () => [
       {
@@ -157,7 +163,6 @@ const DynamicWorldPortal = () => {
         type: "Vocational Courses",
         items: vocationCourses,
       },
-      // TODO: plug real data when ready
       {
         title: "Regular Admission",
         type: "Regular Admission",
@@ -168,11 +173,7 @@ const DynamicWorldPortal = () => {
         type: "College Admission",
         items: collegeAdmission,
       },
-      {
-        title: "Study Abroad",
-        type: "Study Abroad",
-        items: studyAbroad,
-      },
+      { title: "Study Abroad", type: "Study Abroad", items: studyAbroad },
       {
         title: "Study Abroad Countries",
         type: "Study Abroad Countries",
@@ -194,10 +195,24 @@ const DynamicWorldPortal = () => {
     setExpandedItems((prev) => ({ ...prev, [index]: !prev[index] }));
   }, []);
 
+  // 🔽 helper: smooth scroll to the main content container
+  const scrollToMain = useCallback(() => {
+    // use ref if present; fallback to id
+    const target =
+      mainSectionRef.current || document.getElementById("main-section");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, []);
+
   const handleItemClick = useCallback(
     async (item, type) => {
       setSelected({ type, item });
       setError(null);
+
+      // ✅ scroll immediately on click (fast feedback)
+      // If you prefer to scroll after data loads, move this call into each try{} block after set*Data(...)
+      window.requestAnimationFrame(scrollToMain);
 
       // Cancel previous request if any
       if (reqAbortRef.current) reqAbortRef.current.abort();
@@ -208,8 +223,6 @@ const DynamicWorldPortal = () => {
         case "Distance University": {
           try {
             setIsLoading(true);
-
-            // new controller for this click
             const controller = new AbortController();
             reqAbortRef.current = controller;
 
@@ -219,13 +232,11 @@ const DynamicWorldPortal = () => {
                 : "distanceUniversity";
             const { data } = await axios.get(`${api}/${endpoint}`, {
               params: { universityName: tidy(item) },
-              signal: controller.signal, // axios >=0.22
+              signal: controller.signal,
             });
 
-            // if not aborted, update state
             setUniversityData(data?.data ?? null);
           } catch (e) {
-            // Ignore cancellations; surface real errors
             if (e?.name !== "CanceledError" && e?.code !== "ERR_CANCELED") {
               console.error(e);
               setError("Failed to fetch university data.");
@@ -238,19 +249,18 @@ const DynamicWorldPortal = () => {
         }
 
         case "Study Abroad Countries": {
-          console.log(type, item);
           try {
             setIsLoading(true);
             const controller = new AbortController();
             reqAbortRef.current = controller;
-            const endpoint = `country?countryName=${item}`;
+
             const { data } = await axios.get(`${api}/country`, {
               params: { countryName: tidy(item) },
-              signal: controller.signal, // axios >=0.22
+              signal: controller.signal,
             });
+
             setCountryData(data.data);
           } catch (e) {
-            // Ignore cancellations; surface real errors
             if (e?.name !== "CanceledError" && e?.code !== "ERR_CANCELED") {
               console.error(e);
               setError("Failed to fetch university data.");
@@ -259,6 +269,7 @@ const DynamicWorldPortal = () => {
           } finally {
             setIsLoading(false);
           }
+          break; // ✅ prevent fall-through into default
         }
 
         default: {
@@ -268,12 +279,12 @@ const DynamicWorldPortal = () => {
         }
       }
     },
-    [api]
+    [api, scrollToMain]
   );
 
   return (
-    <div className="flex flex-col lg:flex-row p-4 parent ">
-      <div className="h-[inherit]">
+    <div className="flex flex-col lg:flex-row space-y-5 parent">
+      <div className="p-2">
         <Sidebar
           sidebarData={sidebarData}
           expandedItems={expandedItems}
@@ -286,7 +297,12 @@ const DynamicWorldPortal = () => {
         />
       </div>
 
-      <div className="flex-1 bg-white shadow  ml-4 rounded-lg">
+      {/* 🔽 main section gets id + ref; scroll-mt offsets sticky headers if any */}
+      <div
+        id="main-section"
+        ref={mainSectionRef}
+        className="flex-1 bg-white shadow lg:ml-4 rounded-lg scroll-mt-24"
+      >
         <MainContent
           selected={selected}
           universityData={universityData}

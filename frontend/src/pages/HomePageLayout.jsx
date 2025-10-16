@@ -16,9 +16,7 @@ const HomePageLayout = () => {
   return (
     <div>
       <Hero />
-   
-        <DynamicWorldPortal />
-     
+      <DynamicWorldPortal />
       <InquiryDetails />
       <DynamicUniversityCarousel />
       <AboutInfo />

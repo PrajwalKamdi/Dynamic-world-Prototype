@@ -84,8 +84,8 @@ const Management02 = () => {
   ];
 
   return (
-    <div className="m-5 max-w-7xl">
-      <div className="px-5 lg:px-8 py-5 bg-gray-100 rounded-2xl ">
+    <div className="lg:m-5 max-w-7xl">
+      <div className="px-2 lg:px-8 py-5 bg-gray-100 lg:rounded-2xl ">
         <p className="text-sm my-2">
           Business Management courses focus on developing essential skills to
           manage and run a business effectively. They cover a wide range of
@@ -99,19 +99,19 @@ const Management02 = () => {
           depending on the institute and program level.
         </p>
         <section className="my-5">
-          <div className="border-b-[#3E96F4] text-center my-2">
-            <h3 className="text-base lg:text-xl font-semibold">
+          <div className="bg-[#3E96F4] text-center my-2  rounded-2xl">
+            <h3 className="text-lg lg:text-xl font-semibold text-white py-2 ">
               Top Management Colleges in Pune and Mumbai
             </h3>
           </div>
-          <div className="overflow-x-auto rounded-2xl shadow-md border border-[#EDEEEB] bg-white">
+          <div className="overflow-x-auto rounded-2xl shadow-md border border-[#EDEEEB] ">
             <table className="min-w-full border-collapse">
               <thead className="bg-[#3E96F4] text-white">
                 <tr>
-                  <th className="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wide">
+                  <th className="px-2 py-4 lg:px-6 lg:py-4 text-xs lg:text-sm text-center lg:text-left font-semibold uppercase tracking-wide">
                     Pune Colleges
                   </th>
-                  <th className="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wide">
+                  <th className="px-2 py-2 lg:px-6 lg:py-4 text-xs lg:text-sm text-center lg:text-left font-semibold uppercase tracking-wide">
                     Mumbai Colleges
                   </th>
                 </tr>
@@ -123,10 +123,10 @@ const Management02 = () => {
                     key={idx}
                     className="hover:bg-[#F9FAFB] transition-colors duration-200"
                   >
-                    <td className="px-6 py-4 text-sm font-medium">
+                    <td className="px-2 py-2 lg:px-6 lg:py-4 text-xs lg:text-sm font-medium">
                       {item.puneCollege}
                     </td>
-                    <td className="px-6 py-4 text-sm">{item.mumbai}</td>
+                    <td className="px-2 py-2 lg:px-6 lg:py-4 text-xs lg:text-sm">{item.mumbai}</td>
                   </tr>
                 ))}
               </tbody>

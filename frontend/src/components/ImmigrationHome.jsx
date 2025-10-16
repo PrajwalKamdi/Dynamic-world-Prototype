@@ -3,7 +3,7 @@ import DynamicForm from "../pages/DynamicForm";
 import { Download } from "lucide-react";
 
 const Pill = ({ children }) => (
-  <span className="inline-flex items-center gap-2 rounded-full bg-[#EDEEEB] px-3 py-1 text-xs font-semibold text-[#31393C]">
+  <span className="inline-flex items-center gap-2 rounded-full bg-[#EDEEEB] px-2.5 sm:px-3 py-1 text-[11px] sm:text-xs font-semibold text-[#31393C]">
     <span className="h-1.5 w-1.5 rounded-full bg-[#3E96F4]" />
     {children}
   </span>
@@ -11,7 +11,7 @@ const Pill = ({ children }) => (
 
 const Bullet = ({ children }) => (
   <li className="flex items-start gap-3">
-    <span className="mt-1 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#3E96F4]/10 ring-1 ring-[#3E96F4]/30">
+    <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#3E96F4]/10 ring-1 ring-[#3E96F4]/30">
       <svg
         viewBox="0 0 24 24"
         className="h-3.5 w-3.5 text-[#3E96F4]"
@@ -27,24 +27,24 @@ const Bullet = ({ children }) => (
 
 const ImmigrationHome = () => {
   return (
-    <section className="relative mx-auto max-w-7xl px-4 py-8">
+    <section className="relative mx-auto max-w-7xl px-3 sm:px-4 lg:px-6 py-6 sm:py-8">
       {/* soft background tint */}
       <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-[#3E96F4]/5 to-transparent" />
 
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
+      <div className="grid grid-cols-1 gap-5 sm:gap-6 lg:grid-cols-12">
         {/* Left */}
         <div className="lg:col-span-7 xl:col-span-8">
           {/* Header */}
-          <div className="mb-5">
+          <div className="mb-4 sm:mb-5">
             <Pill>Trusted Immigration & Skilled Jobs</Pill>
-            <h1 className="mt-3 text-2xl font-bold tracking-tight text-[#31393C] lg:text-4xl">
+            <h1 className="mt-3 text-xl sm:text-2xl lg:text-4xl font-bold tracking-tight text-[#31393C]">
               Immigration Services
             </h1>
-            <div className="mt-3 h-1 w-28 rounded-full bg-[#3E96F4]" />
+            <div className="mt-3 h-1 w-24 sm:w-28 rounded-full bg-[#3E96F4]" />
           </div>
 
           {/* Intro copy */}
-          <div className="space-y-4 text-gray-700 leading-relaxed">
+          <div className="space-y-3 sm:space-y-4 text-[13px] sm:text-sm lg:text-base text-gray-700 leading-relaxed">
             <p>
               We proudly offer a wide range of skilled job opportunities across
               some of the most sought-after destinations in the world, including
@@ -74,7 +74,7 @@ const ImmigrationHome = () => {
           </div>
 
           {/* Countries */}
-          <div className="mt-5 flex flex-wrap gap-2">
+          <div className="mt-4 sm:mt-5 flex flex-wrap gap-1.5 sm:gap-2">
             {[
               "United Kingdom",
               "Australia",
@@ -88,11 +88,11 @@ const ImmigrationHome = () => {
           </div>
 
           {/* Benefits */}
-          <div className="mt-6 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
-            <h3 className="text-base font-semibold text-[#31393C]">
+          <div className="mt-5 sm:mt-6 rounded-2xl border border-gray-200 bg-white p-4 sm:p-5 shadow-sm">
+            <h3 className="text-sm sm:text-base font-semibold text-[#31393C]">
               Why choose Dynamic World?
             </h3>
-            <ul className="mt-3 grid grid-cols-1 gap-3 md:grid-cols-2">
+            <ul className="mt-3 grid grid-cols-1 gap-2.5 sm:gap-3 md:grid-cols-2">
               <Bullet>
                 Certified immigration guidance with transparent process
               </Bullet>
@@ -104,11 +104,18 @@ const ImmigrationHome = () => {
             </ul>
 
             {/* CTA row */}
-            <div className="mt-5 flex justify-evenly items-end gap-3">
-              <CalendyButton />
+            <div className="mt-5 flex flex-col sm:flex-row sm:items-center gap-2.5 sm:gap-3">
+              {/* Make CalendyButton fill width on mobile */}
+              <div className="w-full sm:w-auto">
+                <CalendyButton />
+              </div>
 
-              <button className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#3E96F4] text-white  font-semibold shadow-md hover:bg-[#3E96F6] hover:text-black/80 transition duration-300 ease-in-out hover:cursor-pointer hover:-translate-y-1">
-                Download Brochure <Download size={20} />
+              <button
+                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-[#3E96F4] text-white text-sm sm:text-base font-semibold shadow-md transition duration-300 ease-in-out hover:bg-[#3E96F4]/90 hover:-translate-y-0.5"
+                aria-label="Download Brochure"
+              >
+                Download Brochure <Download size={18} className="sm:hidden" />
+                <Download size={20} className="hidden sm:inline-block" />
               </button>
             </div>
           </div>
@@ -119,11 +126,11 @@ const ImmigrationHome = () => {
           <div className="lg:sticky lg:top-6">
             <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-md">
               {/* Form header */}
-              <div className="relative bg-gradient-to-r from-[#3E96F4] via-[#3E96F4]/90 to-[#3E96F4]/70 p-5">
-                <h3 className="text-lg font-semibold text-white">
+              <div className="relative bg-gradient-to-r from-[#3E96F4] via-[#3E96F4]/90 to-[#3E96F4]/70 p-4 sm:p-5">
+                <h3 className="text-base sm:text-lg font-semibold text-white">
                   Get a Free Consultation
                 </h3>
-                <p className="mt-1 text-sm text-white/90">
+                <p className="mt-1 text-xs sm:text-sm text-white/90">
                   Share your details and our expert will reach out with the next
                   steps.
                 </p>
@@ -132,12 +139,12 @@ const ImmigrationHome = () => {
               </div>
 
               {/* Embedded form */}
-              <div className="p-4">
+              <div className="p-3 sm:p-4">
                 <DynamicForm />
               </div>
 
               {/* Trust row */}
-              <div className="flex items-center gap-3 border-t border-gray-100 bg-[#EDEEEB] px-4 py-3">
+              <div className="flex items-center gap-2.5 sm:gap-3 border-t border-gray-100 bg-[#EDEEEB] px-3 sm:px-4 py-2.5 sm:py-3">
                 <svg
                   viewBox="0 0 24 24"
                   className="h-5 w-5 text-[#3E96F4]"
@@ -146,7 +153,7 @@ const ImmigrationHome = () => {
                 >
                   <path d="M12 2 2 7l10 5 10-5-10-5Zm0 7L2 4v13l10 5 10-5V4l-10 5Z" />
                 </svg>
-                <p className="text-xs text-[#31393C]">
+                <p className="text-[11px] sm:text-xs text-[#31393C]">
                   100% confidential • No hidden charges • Quick turnaround
                 </p>
               </div>

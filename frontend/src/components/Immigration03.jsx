@@ -29,118 +29,79 @@ const Immigration03 = () => {
   ];
 
   return (
-    <>
-      {/* Embedded CSS to mirror Europe component */}
-      <style>{`
-        .page-container {
-          min-height: 100vh;
-          background-color: #3E96F4; /* brand blue to match your theme */
-          color: white;
-          padding: 2rem;
-          font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-        }
-        .header {
-          display: flex;
-          align-items: center;
-          gap: 0.75rem; /* 12px */
-          margin-bottom: 1.5rem; /* 24px */
-          padding-bottom: 1rem; /* 16px */
-          border-bottom: 1px solid rgba(255,255,255,0.3);
-        }
-        .flag {
-          width: 2.5rem; /* 40px */
-          height: auto;
-          border-radius: 6px;
-          box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset, 0 4px 12px rgba(0,0,0,0.15);
-        }
-        .title {
-          font-size: 1.875rem; /* 30px */
-          font-weight: 700;
-        }
-        .section-title {
-          font-size: 1.25rem; /* 20px */
-          font-weight: 700;
-          margin-bottom: 0.75rem; /* 12px */
-        }
-        .table-wrapper {
-          background-color: rgba(255, 255, 255, 0.10); /* bg-white/10 */
-          border: 1px solid rgba(255,255,255,0.20);    /* ring */
-          border-radius: 1rem; /* 16px */
-          padding: 1.25rem; /* 20px */
-          margin-bottom: 1.75rem; /* 28px */
-          backdrop-filter: saturate(140%) blur(2px);
-        }
-        .info-table {
-          width: 100%;
-          border-collapse: collapse;
-          border-radius: 0.75rem; /* 12px */
-          overflow: hidden;
-        }
-        .info-table tr + tr {
-          border-top: 1px solid rgba(255, 255, 255, 0.25);
-        }
-        .info-table td {
-          padding: 0.75rem 1rem; /* py-3 px-4 */
-          vertical-align: top;
-        }
-        .category-cell {
-          font-weight: 600;
-          width: 33.33%;
-          border-right: 1px solid rgba(255, 255, 255, 0.25);
-        }
-
-        /* Small screens tweaks */
-        @media (max-width: 640px) {
-          .title { font-size: 1.5rem; }
-          .table-wrapper { padding: 1rem; }
-          .info-table td { padding: 0.65rem 0.75rem; }
-        }
-      `}</style>
-
-      <div className="page-container">
-        {/* Header */}
-        <div className="header">
-          <img src={UAEFlag} alt="UAE Flag" className="flag" />
-          <h1 className="title">DUBAI</h1>
-        </div>
-
-        {/* Job Information */}
-        <h2 className="section-title">Job Information</h2>
-        <div className="table-wrapper">
-          <table className="info-table">
-            <tbody>
-              {jobDetails.map((row, i) => (
-                <tr key={i}>
-                  <td className="category-cell">{row.category}</td>
-                  <td>{row.details}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
-        {/* What Dynamic World is providing */}
-        <h2 className="section-title">What Dynamic World is providing?</h2>
-        <div className="table-wrapper">
-          <table className="info-table">
-            <tbody>
-              {servicesProvided.map((row, i) => (
-                <tr key={i}>
-                  <td className="category-cell">{row.category}</td>
-                  <td>{row.details}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
-        {/* (Optional) CTA row to match your other pages */}
-        {/* <div style={{display:'flex', gap:'12px', marginTop:'8px', flexWrap:'wrap'}}>
-          <a href="#apply" style={{background:'#fff', color:'#31393C', fontWeight:600, padding:'8px 14px', borderRadius:'10px', textDecoration:'none', boxShadow:'0 4px 10px rgba(0,0,0,0.15)'}}>Apply Now</a>
-          <a href="#consultation" style={{border:'1px solid rgba(255,255,255,0.6)', color:'#fff', fontWeight:600, padding:'8px 14px', borderRadius:'10px', textDecoration:'none'}}>Free Consultation</a>
-        </div> */}
+    <div className="min-h-screen bg-[#3E96F4] text-white px-4 sm:px-6 lg:px-8 py-6 font-[Poppins,sans-serif]">
+      {/* Header */}
+      <div className="flex items-center gap-3 mb-6 pb-4 border-b border-white/30">
+        <img
+          src={UAEFlag}
+          alt="UAE Flag"
+          className="w-10 h-auto rounded-md shadow-[inset_0_1px_0_rgba(255,255,255,0.4),0_4px_12px_rgba(0,0,0,0.15)]"
+        />
+        <h1 className="text-2xl sm:text-3xl font-bold">DUBAI</h1>
       </div>
-    </>
+
+      {/* Job Information */}
+      <h2 className="text-lg sm:text-xl font-bold mb-3">Job Information</h2>
+      <div className="bg-white/10 ring-1 ring-white/20 rounded-2xl p-4 sm:p-5 mb-7 backdrop-blur-sm">
+        <table className="w-full border-collapse">
+          <tbody>
+            {jobDetails.map((row, i) => (
+              <tr
+                key={i}
+                className="border-t first:border-t-0 border-white/25"
+              >
+                <td className="font-semibold w-1/3 border-r border-white/25 align-top px-3 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm lg:text-base">
+                  {row.category}
+                </td>
+                <td className="align-top px-3 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm lg:text-base">
+                  {row.details}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {/* What Dynamic World is providing */}
+      <h2 className="text-lg sm:text-xl font-bold mb-3">
+        What Dynamic World is providing?
+      </h2>
+      <div className="bg-white/10 ring-1 ring-white/20 rounded-2xl p-4 sm:p-5 mb-7 backdrop-blur-sm">
+        <table className="w-full border-collapse">
+          <tbody>
+            {servicesProvided.map((row, i) => (
+              <tr
+                key={i}
+                className="border-t first:border-t-0 border-white/25"
+              >
+                <td className="font-semibold w-1/3 border-r border-white/25 align-top px-3 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm lg:text-base">
+                  {row.category}
+                </td>
+                <td className="align-top px-3 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm lg:text-base">
+                  {row.details}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {/* Optional CTA (kept as Tailwind-ready, commented) */}
+      {/* <div className="flex gap-3 mt-2 flex-wrap">
+        <a
+          href="#apply"
+          className="bg-white text-[#31393C] font-semibold px-4 py-2 rounded-xl shadow-md"
+        >
+          Apply Now
+        </a>
+        <a
+          href="#consultation"
+          className="border border-white/60 text-white font-semibold px-4 py-2 rounded-xl"
+        >
+          Free Consultation
+        </a>
+      </div> */}
+    </div>
   );
 };
 

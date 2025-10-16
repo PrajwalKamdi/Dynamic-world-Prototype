@@ -10,8 +10,8 @@ const Immegration02 = () => {
   ];
 
   return (
-    <section className="m-5">
-      <div className="relative mx-auto max-w-7xl rounded-2xl bg-[#3E96F4] px-5 py-8 text-white">
+    <section className="lg:m-5">
+      <div className="relative mx-auto max-w-7xl lg:rounded-2xl bg-[#3E96F4] px-2 lg:px-5 py-8 text-white">
         {/* soft overlay glow */}
         <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-white/10 via-transparent to-white/10" />
 

@@ -50,18 +50,18 @@ export default function PHD02() {
   ];
 
   return (
-    <div className="w-full bg-white p-6 md:p-8">
+    <div className="w-full bg-white  md:p-8">
       {/* Header Section */}
-      <div className="bg-gray-100 rounded-2xl shadow-md p-6 md:p-8 w-full">
-        <div className="flex flex-col md:flex-row justify-between items-center mb-6">
-          <h2 className="text-2xl font-semibold text-[#3E96F4] mb-4 md:mb-0">
+      <div className="bg-gray-100 lg:rounded-2xl shadow-md p-2 md:p-8 w-full">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-2">
+          <h2 className="text-xl lg:text-2xl font-semibold text-[#3E96F4] mb-2  lg:mb-4 md:mb-0">
             Ph.D. Admission and Completion Process
           </h2>
         </div>
 
         {/* Description Section */}
         <div className="text-[#31393C] leading-relaxed mb-6 space-y-4">
-          <p className="mb-4">
+          <p className="">
             The journey towards a Ph.D. in India involves a structured process
             designed to ensure that candidates are well-prepared for high-level
             research. Here's how it typically works:

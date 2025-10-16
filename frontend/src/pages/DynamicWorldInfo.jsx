@@ -13,12 +13,34 @@ export const dynamicWorldData = [
       universities: "50+ partnered online universities",
     },
     services: [
-      { name: "Online University Admissions", details: "Provides admission assistance for UGC-approved online universities." },
-      { name: "Career Counseling", details: "24/7 personalized counseling and course selection guidance." },
-      { name: "Placement Support", details: "Offers 100% placement guidance and post-admission support." },
-      { name: "Distance & Online Education", details: "Helps students enroll in distance learning and online degree programs." },
-      { name: "Medical (MBBS) Admissions", details: "Guides students through MBBS course admissions in India and abroad." },
-      { name: "Refund and Return Policy", details: "Maintains financial transparency through a defined return and refund policy." },
+      {
+        name: "Online University Admissions",
+        details:
+          "Provides admission assistance for UGC-approved online universities.",
+      },
+      {
+        name: "Career Counseling",
+        details: "24/7 personalized counseling and course selection guidance.",
+      },
+      {
+        name: "Placement Support",
+        details: "Offers 100% placement guidance and post-admission support.",
+      },
+      {
+        name: "Distance & Online Education",
+        details:
+          "Helps students enroll in distance learning and online degree programs.",
+      },
+      {
+        name: "Medical (MBBS) Admissions",
+        details:
+          "Guides students through MBBS course admissions in India and abroad.",
+      },
+      {
+        name: "Refund and Return Policy",
+        details:
+          "Maintains financial transparency through a defined return and refund policy.",
+      },
     ],
     headOffice: {
       city: "Pune",
@@ -70,10 +92,14 @@ const SectionCard = ({ title, subtitle, children, badge }) => (
   <section className="rounded-2xl bg-white shadow-sm ring-1 ring-gray-200 overflow-hidden">
     <div className="px-4 sm:px-6 py-4 border-b border-gray-100 flex items-center justify-between">
       <div>
-        <h2 className="text-base sm:text-lg font-semibold text-gray-900">{title}</h2>
-        {subtitle && <p className="text-xs sm:text-sm text-gray-500 mt-0.5">{subtitle}</p>}
+        <h2 className="text-base sm:text-lg font-semibold text-gray-900">
+          {title}
+        </h2>
+        {subtitle && (
+          <p className="text-xs sm:text-sm text-gray-500 mt-0.5">{subtitle}</p>
+        )}
       </div>
-      {badge}
+      {/* {badge} */}
     </div>
     <div className="px-4 sm:px-6 py-5">{children}</div>
   </section>
@@ -85,13 +111,17 @@ const LinkButton = ({ href, children, variant = "primary" }) => {
   const variants = {
     primary:
       "bg-indigo-600 text-white hover:bg-indigo-700 focus-visible:ring-indigo-400",
-    soft:
-      "bg-indigo-50 text-indigo-700 hover:bg-indigo-100 ring-1 ring-indigo-100 focus-visible:ring-indigo-300",
+    soft: "bg-indigo-50 text-indigo-700 hover:bg-indigo-100 ring-1 ring-indigo-100 focus-visible:ring-indigo-300",
     outline:
       "ring-1 ring-gray-300 text-gray-700 hover:bg-gray-50 focus-visible:ring-indigo-300",
   };
   return (
-    <a href={href} target="_blank" rel="noreferrer" className={`${base} ${variants[variant]}`}>
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className={`${base} ${variants[variant]}`}
+    >
       {children}
     </a>
   );
@@ -101,9 +131,9 @@ const DynamicWorldInfo = () => {
   const data = dynamicWorldData[0];
 
   return (
-    <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-0 space-y-6 sm:space-y-8">
+    <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-5 space-y-6  sm:space-y-8 pb-5">
       {/* HERO */}
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 via-indigo-500 to-violet-600 text-white shadow-lg">
+      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 via-indigo-500 to-violet-600 text-white shadow-lg my-2">
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_top_left,white,transparent_50%),radial-gradient(ellipse_at_bottom_right,white,transparent_50%)]" />
         <div className="relative px-5 sm:px-8 py-7 sm:py-10">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
@@ -124,7 +154,10 @@ const DynamicWorldInfo = () => {
               <LinkButton href={`tel:${data.headOffice.phone}`} variant="soft">
                 📞 Call
               </LinkButton>
-              <LinkButton href={`mailto:${data.headOffice.email}`} variant="outline">
+              <LinkButton
+                href={`mailto:${data.headOffice.email}`}
+                variant="outline"
+              >
                 ✉️ Email
               </LinkButton>
             </div>
@@ -133,16 +166,28 @@ const DynamicWorldInfo = () => {
           {/* Stats */}
           <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
             <div className="rounded-2xl bg-white/10 backdrop-blur ring-1 ring-white/20 p-4">
-              <div className="text-xs uppercase tracking-wide text-indigo-100">Admissions</div>
-              <div className="mt-1 text-lg font-semibold">{data.achievements.admissions}</div>
+              <div className="text-xs uppercase tracking-wide text-indigo-100">
+                Admissions
+              </div>
+              <div className="mt-1 text-lg font-semibold">
+                {data.achievements.admissions}
+              </div>
             </div>
             <div className="rounded-2xl bg-white/10 backdrop-blur ring-1 ring-white/20 p-4">
-              <div className="text-xs uppercase tracking-wide text-indigo-100">Counseled</div>
-              <div className="mt-1 text-lg font-semibold">{data.achievements.counseling}</div>
+              <div className="text-xs uppercase tracking-wide text-indigo-100">
+                Counseled
+              </div>
+              <div className="mt-1 text-lg font-semibold">
+                {data.achievements.counseling}
+              </div>
             </div>
             <div className="rounded-2xl bg-white/10 backdrop-blur ring-1 ring-white/20 p-4">
-              <div className="text-xs uppercase tracking-wide text-indigo-100">Universities</div>
-              <div className="mt-1 text-lg font-semibold">{data.achievements.universities}</div>
+              <div className="text-xs uppercase tracking-wide text-indigo-100">
+                Universities
+              </div>
+              <div className="mt-1 text-lg font-semibold">
+                {data.achievements.universities}
+              </div>
             </div>
           </div>
         </div>
@@ -249,24 +294,19 @@ const DynamicWorldInfo = () => {
       <SectionCard title="Additional Info">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
           <div className="rounded-xl border border-gray-200 p-4">
-            <div className="text-xs uppercase tracking-wide text-gray-500">Industry</div>
-            <div className="mt-1 font-semibold text-gray-900">{data.industry}</div>
+            <div className="text-xs uppercase tracking-wide text-gray-500">
+              Industry
+            </div>
+            <div className="mt-1 font-semibold text-gray-900">
+              {data.industry}
+            </div>
           </div>
           <div className="rounded-xl border border-gray-200 p-4">
-            <div className="text-xs uppercase tracking-wide text-gray-500">Founded</div>
-            <div className="mt-1 font-semibold text-gray-900">{data.foundedYear}</div>
-          </div>
-          <div className="rounded-xl border border-gray-200 p-4">
-            <div className="text-xs uppercase tracking-wide text-gray-500">Website</div>
-            <div className="mt-1">
-              <a
-                href={data.website}
-                target="_blank"
-                rel="noreferrer"
-                className="text-indigo-700 hover:text-indigo-800 underline decoration-indigo-300 underline-offset-4"
-              >
-                {data.website.replace(/^https?:\/\//, "")}
-              </a>
+            <div className="text-xs uppercase tracking-wide text-gray-500">
+              Founded
+            </div>
+            <div className="mt-1 font-semibold text-gray-900">
+              {data.foundedYear}
             </div>
           </div>
         </div>

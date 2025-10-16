@@ -97,7 +97,7 @@ const Pharmacy02 = () => {
   ];
 
   return (
-    <div className="m-5 max-w-7xl">
+    <div className="lg:m-5 max-w-7xl">
       <div className="bg-gray-100 py-5 px-5 lg:px-8 rounded-2xl">
         <section className="mb-5">
           <p className="text-gray-700 text-sm">
@@ -113,34 +113,31 @@ const Pharmacy02 = () => {
 
         {/* Mumbai Colleges Table */}
         <section className="mb-10 overflow-x-auto">
-          <h3 className="text-lg  font-semibold mb-5">
-            Top Pharmacy Colleges in Mumbai
-          </h3>
+          <div className="bg-[#3E96F4] text-center my-2  rounded-2xl">
+            <h3 className="text-lg lg:text-xl font-semibold text-white py-2 px-2 ">
+              Top Pharmacy Colleges In Mumbai
+            </h3>
+          </div>
           <table className="min-w-full bg-white border border-gray-300 rounded-xl shadow-md overflow-hidden">
             <thead className="bg-[#3E96F4] text-white  border-gray-300">
               <tr>
-                <th className="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wide">
+                <th className="px-2 py-4 lg:px-6 lg:py-4 text-xs lg:text-sm text-center lg:text-leftfont-semibold uppercase tracking-wide">
                   College Name
                 </th>
-                <th className="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wide">
+                <th className="px-2 py-4 lg:px-6 lg:py-4 text-xs lg:text-sm text-center lg:text-left font-semibold uppercase tracking-wide">
                   Highlights
                 </th>
               </tr>
             </thead>
             <tbody>
               {mumbaiColleges.map((college, index) => (
-                <tr
-                  key={index}
-                  className={
-                    index % 2 === 0
-                      ? "bg-gray-50 text-left"
-                      : "bg-white text-left"
-                  }
-                >
-                  <td className="py-3 px-5 font-medium border-r border-gray-300 text-sm">
+                <tr key={index}>
+                  <td className="px-2 py-4 lg:px-6 lg:py-4 text-xs lg:text-sm  lg:text-left">
                     {college.name}
                   </td>
-                  <td className="py-3 px-5 text-sm">{college.highlights}</td>
+                  <td className="px-2 py-4 lg:px-6 lg:py-4 text-xs lg:text-sm  lg:text-left">
+                    {college.highlights}
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -149,16 +146,18 @@ const Pharmacy02 = () => {
 
         {/* Pune Colleges Table */}
         <section className="overflow-x-auto">
-          <h3 className="text-lg lg:text-xl  font-semibold mb-5 text-center">
-            Top Pharmacy Colleges in Pune
-          </h3>
+          <div className="bg-[#3E96F4] text-center my-2  rounded-2xl">
+            <h3 className="text-lg lg:text-xl font-semibold text-white py-2 px-2 ">
+              Top Pharmacy Colleges In Pune
+            </h3>
+          </div>
           <table className="min-w-full bg-white border border-gray-300 rounded-xl overflow-hidden">
             <thead className="bg-[#3E96F4]  text-white border-gray-300">
               <tr>
-                <th className="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wide">
+                <th className="px-2 py-4 lg:px-6 lg:py-4 text-xs lg:text-sm  lg:text-left font-semibold uppercase tracking-wide">
                   College Name
                 </th>
-                <th className="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wide">
+                <th className="px-2 py-4 lg:px-6 lg:py-4 text-xs lg:text-sm  lg:text-left font-semibold uppercase tracking-wide">
                   Highlights
                 </th>
               </tr>
@@ -167,16 +166,12 @@ const Pharmacy02 = () => {
               {puneColleges.map((college, index) => (
                 <tr
                   key={index}
-                  className={
-                    index % 2 === 0
-                      ? "bg-gray-50 text-left"
-                      : "bg-white text-left"
-                  }
+                 
                 >
-                  <td className="py-3 px-5 font-medium border-r border-gray-300 text-sm">
+                  <td className="px-2 py-4 lg:px-6 lg:py-4 text-xs lg:text-sm  lg:text-left">
                     {college.name}
                   </td>
-                  <td className="py-3 px-5 text-sm">{college.highlights}</td>
+                  <td className="px-2 py-4 lg:px-6 lg:py-4 text-xs lg:text-sm  lg:text-left">{college.highlights}</td>
                 </tr>
               ))}
             </tbody>
