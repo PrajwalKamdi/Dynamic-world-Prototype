@@ -26,8 +26,8 @@ const BVOC1 = () => {
       </div>
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
-          <div className="px-8 py-5 text-base">
-            <p className="text-sm md:text-base leading-relaxed">
+          <div className="text-sm px-4 lg:px-8 py-5 lg:text-base">
+            <p className="leading-relaxed">
               The <strong>Bachelor of Vocation (BVoc)</strong> is an
               undergraduate program focused on <strong>practical skills</strong>{" "}
               and vocational training. BVoc emphasizes

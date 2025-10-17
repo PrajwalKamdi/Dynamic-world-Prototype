@@ -114,13 +114,12 @@ const DVOC2 = () => {
 
   return (
     <div className="min-h-screen w-full bg-white text-[#31393C]">
-      {/* Header */}
       <UniversityStrip />
 
       {/* Main Content */}
       <div className="py-6">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="bg-white rounded-xl shadow-md border border-gray-200 p-4 md:p-6">
+        <div className="max-w-6xl mx-auto px-2 lg:px-4">
+          <div className="bg-white rounded-xl shadow-md border-t border-gray-200 p-0 md:p-6">
             {/* University Header */}
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 mb-4">
               <img
@@ -132,7 +131,7 @@ const DVOC2 = () => {
                 <h1 className="text-2xl font-bold text-[#3E96F4]">
                   NIILM University
                 </h1>
-                <p className="text-md text-gray-600">
+                <p className="text-sm mt-2 lg:text-base text-gray-600">
                   UGC, BCI, NCTE, AICTE-approved • Haryana • Quality education
                   aligned with international standards.
                 </p>
@@ -142,21 +141,21 @@ const DVOC2 = () => {
             {/* Section Divider */}
             <div className="flex items-center justify-center my-4">
               <div className="flex-grow border-t border-[#3E96F4]"></div>
-              <span className="px-3 text-xl font-semibold text-[#3E96F4] bg-white">
+              <span className="px-3 text-sm lg:text-xl font-semibold text-[#3E96F4] bg-white">
                 Specializations
               </span>
               <div className="flex-grow border-t border-[#3E96F4]"></div>
             </div>
 
             {/* Programs Table */}
-            <div className="overflow-x-auto rounded-lg border border-gray-200">
+            <div className="overflow-x-auto  border-gray-200 ">
               <table className="w-full border-collapse text-base">
                 <thead className="bg-[#EDEEEB] text-[#31393C]">
                   <tr>
-                    <th className="text-left text-base py-2 px-3  font-semibold border border-gray-300 w-1/4">
+                    <th className="text-left text-sm lg:text-base py-2 px-3  font-semibold border border-gray-300 w-1/4">
                       Category
                     </th>
-                    <th className="text-left py-2 px-3 text-base font-semibold border border-gray-300">
+                    <th className="text-left py-2 px-3 text-sm lg:text-base font-semibold border border-gray-300">
                       Programs
                     </th>
                   </tr>
@@ -167,10 +166,10 @@ const DVOC2 = () => {
                       key={index}
                       className="hover:bg-blue-50 transition-colors border-b border-gray-200"
                     >
-                      <td className="py-2 px-3 text-[15px] font-semibold border border-gray-200 align-top">
+                      <td className="py-2 px-3 text-sm  font-semibold border border-gray-200 align-top">
                         {item.category}
                       </td>
-                      <td className="py-2 px-3 text-[15px] text-gray-700 border border-gray-200">
+                      <td className="py-2 px-3 text-sm text-gray-700 border border-gray-200">
                         {item.programs}
                       </td>
                     </tr>
@@ -179,7 +178,6 @@ const DVOC2 = () => {
               </table>
             </div>
 
-            {/* Footer Note */}
             <p className="mt-4 text-xs text-gray-500 text-center">
               <CurrentYear /> Admissions Open • Apply now for DVOC & Skill-Based
               Programs

@@ -6,7 +6,7 @@ const Diploma01 = () => {
   const isMobile = /Android|iPhone/i.test(navigator.userAgent);
 
   return (
-    <div className="min-h-screen w-full bg-white  shadow-xl">
+    <div className="min-h-screen w-full bg-white">
       {/* Top ribbon (same shell as DVOC) */}
       <div className="bg-[#3E96F4] text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-6">
@@ -32,7 +32,7 @@ const Diploma01 = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 ">
           {/* LEFT: Content Card */}
 
-          <div className="px-8 py-5 text-base">
+          <div className="px-4 lg:px-8 py-5 text-base">
             {/* Duration pills */}
             <div className="flex flex-wrap items-center gap-2">
               <span className="text-[11px] sm:text-xs px-2.5 py-1 rounded-full bg-blue-50 text-[#3E96F4] border border-[#3E96F4]/20">

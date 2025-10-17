@@ -242,16 +242,16 @@ const UniversityCard = ({ name, logo, desc, programs }) => {
   return (
     <section className="bg-white rounded-xl border border-gray-200 shadow-sm p-5 sm:p-6">
       {/* Header */}
-      <div className="flex justify-between items-center  gap-4 pb-4 mb-4 border-b border-gray-200">
+      <div className="lg:flex items-center ">
         <div className="">
           <img
             src={logo}
             alt={name}
-            className="object-contain h-20 w-20 lg:w-50"
+            className="object-contain w-30 lg:w-50  "
             loading="lazy"
           />
         </div>
-        <div className="flex-1">
+        <div className="lg:pl-10 flex-1">
           <h3 className="text-lg sm:text-xl font-bold text-[#3E96F4] leading-snug">
             {name}
           </h3>
@@ -262,7 +262,7 @@ const UniversityCard = ({ name, logo, desc, programs }) => {
       {/* Section label */}
       <div className="flex items-center justify-center my-4">
         <div className="flex-grow border-t border-[#3E96F4]"></div>
-        <span className="px-3 text-xl font-semibold text-[#3E96F4] bg-white">
+        <span className="px-3 text-sm lg:text-xl font-semibold text-[#3E96F4] bg-white">
           Specializations
         </span>
         <div className="flex-grow border-t border-[#3E96F4]"></div>
@@ -273,7 +273,7 @@ const UniversityCard = ({ name, logo, desc, programs }) => {
         <table className="w-full border-collapse border border-gray-300">
           <thead className="bg-[#EDEEEB]">
             <tr>
-              <th className="border border-gray-300 py-2 px-3 lg:text-lg font-semibold text-[#31393C] text-center">
+              <th className="border border-gray-300 py-2 px-3 text-sm lg:text-base font-semibold text-[#31393C] text-center">
                 Program Name
               </th>
             </tr>
@@ -281,7 +281,7 @@ const UniversityCard = ({ name, logo, desc, programs }) => {
           <tbody>
             {visiblePrograms.map((program, idx) => (
               <tr key={idx} className="hover:bg-blue-50/60 transition-colors">
-                <td className="border border-gray-300 py-2 px-3  text-gray-800">
+                <td className="border border-gray-300 py-2 px-3  text-gray-800 text-sm">
                   {program}
                 </td>
               </tr>

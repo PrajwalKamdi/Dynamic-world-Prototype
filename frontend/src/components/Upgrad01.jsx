@@ -3,7 +3,7 @@ import CalendyButton from "./CalendyButton";
 
 const Upgrad01 = () => {
   return (
-    <section className="shadow-md">
+    <section className="">
       <div className="bg-[#3E96F4] text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-6">
           {/* Chip */}
@@ -24,10 +24,8 @@ const Upgrad01 = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="w-full px-8 py-5 text-base">
-          <div className=" space-y-3 text-base">
-           
-          
+        <div className="w-full px-4 lg:px-8 py-5 text-sm lg:text-base">
+          <div className=" space-y-3">
             <p>
              <span className="font-semibold"> Upgrad Skill Courses</span> empower you with industry-relevant knowledge
               and practical expertise. Gain hands-on training, flexible learning

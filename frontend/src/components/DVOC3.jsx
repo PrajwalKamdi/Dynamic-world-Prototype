@@ -34,13 +34,13 @@ const DVOC3 = () => {
       className="min-h-screen bg-white text-[#31393C]"
    
     >
-      <div className="max-w-6xl mx-auto px-4 py-6 sm:px-6 md:px-10">
+      <div className="max-w-6xl mx-auto px-2 lg:px-4 py-3">
         {/* Introduction Card */}
-        <div className="bg-white rounded-xl border border-gray-200 shadow-md p-5 md:p-8 mb-6">
-          <h1 className="text-2xl font-bold text-[#3E96F4] mb-3">
+        <div className="bg-white rounded-xl border border-gray-200 shadow-md p-4 lg:p-4 mb-6">
+          <h1 className="text-xl font-bold text-[#3E96F4] mb-3">
             Diploma in Vocation (D.Voc)
           </h1>
-          <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+          <p className="text-sm lg:text-sm text-gray-700 leading-relaxed">
             A <strong>Diploma in Vocation (D.Voc)</strong> is a skill-based
             program that provides students with{" "}
             <strong>hands-on training</strong> and{" "}
@@ -50,7 +50,7 @@ const DVOC3 = () => {
             sectors, ensuring they are job-ready upon completion.
           </p>
 
-          <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-3">
+          <p className="text-sm sm:text-sm text-gray-700 leading-relaxed mt-3">
             D.Voc specializations include{" "}
             <strong>Production Engineering</strong> (engineering drawing,
             manufacturing processes), <strong>Automobile Servicing</strong>{" "}
@@ -62,7 +62,7 @@ const DVOC3 = () => {
             community-oriented skills.
           </p>
 
-          <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-3">
+          <p className="text-sm  text-gray-700 leading-relaxed mt-3">
             Through this program, students build{" "}
             <strong>critical thinking</strong>,{" "}
             <strong>communication</strong>, and{" "}
@@ -75,12 +75,12 @@ const DVOC3 = () => {
 
         {/* Course Details */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-md p-5 md:p-8">
-          <h2 className="text-lg font-semibold text-[#3E96F4] mb-4">
+          <h2 className="text-xl font-semibold text-[#3E96F4] mb-4">
             D.Voc Course Details
           </h2>
 
           <div className="overflow-x-auto">
-            <table className="w-full border-collapse text-sm sm:text-base">
+            <table className="w-full border-collapse text-sm">
               <thead>
                 <tr className="bg-[#EDEEEB] text-[#31393C]">
                   <th className="border border-gray-300 py-2 px-3 font-semibold text-center">

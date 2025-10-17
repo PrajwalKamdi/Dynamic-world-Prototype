@@ -4,15 +4,7 @@ import DynamicForm from "../pages/DynamicForm";
 import CalendyButton from "./CalendyButton";
 
 const MVOC01 = () => {
-  const handleQuickCall = () => {
-    // Navigate to call
-    window.location.href = "tel:+917887881060"; // Replace with actual phone number
-  };
-
-  const handleVideoCall = () => {
-    // Navigate to WhatsApp
-    window.open("https://wa.me/+917887881060", "_blank"); // Replace with actual WhatsApp number
-  };
+ 
 
   return (
     <div className="mb-5">
@@ -38,8 +30,8 @@ const MVOC01 = () => {
 
       <div className="">
         <div className="grid grid-cols-1 md:grid-cols-2  items-start shadow-xl ">
-          <div className="px-8 py-5 text-base">
-            <div className="space-y-3">
+          <div className="px-4 lg:px-8 py-5 text-base">
+            <div className="space-y-3 text-sm lg:text-base ">
               <p>
                 A{" "}
                 <span className="font-semibold">

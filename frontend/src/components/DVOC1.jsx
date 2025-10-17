@@ -26,8 +26,8 @@ const DVOC1 = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4  border border-gray-200 shadow-sm bg-white">
           {/* Left: Content */}
-          <div className="px-8 py-5 text-base">
-            <div className="space-y-3  leading-relaxed text-[#31393C]">
+          <div className="px-4 lg:px-8 py-5 text-base">
+            <div className="text-sm lg:text-base space-y-3  leading-relaxed text-[#31393C]">
               <p>
                 A{" "}
                 <span className="font-semibold">
