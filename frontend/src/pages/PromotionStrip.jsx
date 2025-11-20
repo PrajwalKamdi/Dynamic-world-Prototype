@@ -80,12 +80,12 @@ const PromotionStrip = () => {
     first?.newsTitle ?? "Latest updates and admission support — check now.";
 
   return (
-    <header className="w-full bg-[#3E96F4] px-4 sm:px-6 py-2 sm:py-3 shadow-md">
+    <header className="w-full bg-[#FFC067] text-black/90 px-4 sm:px-6 py-2 sm:py-3 shadow-md">
       <div className="max-w-7xl mx-auto flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         {/* Left: Logo + Brand */}
         <div className="flex items-center gap-3">
           <div className="flex flex-col">
-            <h1 className="text-white text-sm sm:text-base font-semibold leading-tight">
+            <h1 className="text-black/90 text-sm sm:text-base font-semibold leading-tight">
               Dynamic World – Career Guidance Experts
             </h1>
             <p className="text-[10px] sm:text-xs text-gray-900">
@@ -115,17 +115,18 @@ const PromotionStrip = () => {
               </span>
 
             {/* Message */}
-            <p className="text-[10px] sm:text-xs text-white line-clamp-2">
+            <p className="text-[10px] sm:text-xs text-black/90 line-clamp-2">
               {message}
             </p>
 
             {/* CTA */}
-            <a
+            {/* <a
               href={ctaHref}
               className="hidden md:inline-flex text-[10px] font-medium text-[#3E96F4] bg-white rounded-full px-3 py-[3px] hover:bg-blue-50 transition"
             >
               {ctaLabel}
-            </a>
+            </a> */}
+          </div>
           </div>
         </a>
 

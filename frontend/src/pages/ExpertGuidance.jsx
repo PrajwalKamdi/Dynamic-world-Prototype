@@ -150,7 +150,7 @@ export default function ExpertGuidance({
     >
       {/* Background: soft gradient + subtle dots */}
       <div className="absolute inset-0 -z-10">
-        <div className="h-full w-full bg-gradient-to-b from-[#F7FAFF] via-white to-white" />
+        <div className="h-full w-full bg-[#B3B3B3]" />
         <div
           className="pointer-events-none h-full w-full opacity-[0.35]"
           style={{

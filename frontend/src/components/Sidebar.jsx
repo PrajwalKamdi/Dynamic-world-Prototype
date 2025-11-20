@@ -8,8 +8,8 @@ const Sidebar = ({
   isLoading = false,
 }) => {
   return (
-    <aside className="w-full lg:w-72 h-full">
-      <div className="bg-white   ring-1 ring-gray-200 overflow-hidden min-h-screen">
+    <aside className="w-full lg:w-72 h-full ">
+      <div className="  ring-1 ring-gray-200 overflow-hidden min-h-screen">
         {/* Header */}
         <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
           <div className="px-4 py-3 sm:px-5 sm:py-4">
@@ -21,7 +21,7 @@ const Sidebar = ({
         </div>
 
         {/* Body */}
-        <div className="p-2 sm:p-3">
+        <div className="p-2 sm:p-3 bg-[#D4D4D4] ">
           {isLoading ? (
             <div className="p-4">
               <div className="flex flex-col gap-3 animate-pulse">

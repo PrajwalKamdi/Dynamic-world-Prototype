@@ -37,7 +37,7 @@ const FAQAccordion = () => {
   };
 
   return (
-    <section className="bg-slate-50 py-8 sm:py-10 lg:py-12 px-3 sm:px-6 lg:px-8">
+    <section className="bg-[#D4D4D4] py-8 sm:py-10 lg:py-12 px-3 sm:px-6 lg:px-8">
       <div className="mx-auto w-full max-w-3xl">
         <h2 className="text-lg sm:text-2xl lg:text-3xl font-bold text-slate-800 text-center mb-6 sm:mb-8">
           Frequently Asked Questions
