@@ -64,7 +64,7 @@ const BVOCInfo = () => {
         {/* ----- Table Section ----- */}
         <div className="overflow-x-auto">
           <table className="min-w-full border border-gray-300 text-sm md:text-base rounded-lg overflow-hidden">
-            <thead className="bg-[#3E96F4]/10">
+            <thead className="bg-[#FFC067]/10">
               <tr>
                 <th className="text-left px-4 py-3 border border-gray-300 font-semibold text-[#3E96F4]">
                   Aspect
@@ -75,7 +75,7 @@ const BVOCInfo = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className="hover:bg-blue-50/50 transition">
+              <tr className="hover:bg-[#FFC067]/50 transition">
                 <td className="px-4 py-2 border border-gray-300 border-l border-r font-semibold">
                   Eligibility
                 </td>
@@ -84,7 +84,7 @@ const BVOCInfo = () => {
                   Certification
                 </td>
               </tr>
-              <tr className="hover:bg-blue-50/50 transition">
+              <tr className="hover:bg-[#FFC067]/50 transition">
                 <td className="px-4 py-2 border border-gray-300 border-l border-r font-semibold">
                   Selection Methods
                 </td>
@@ -92,7 +92,7 @@ const BVOCInfo = () => {
                   Merit-based or Entrance Exam
                 </td>
               </tr>
-              <tr className="hover:bg-blue-50/50 transition">
+              <tr className="hover:bg-[#FFC067]/50 transition">
                 <td className="px-4 py-2 border border-gray-300 border-l border-r font-semibold">
                   Admission Start
                 </td>
@@ -100,7 +100,7 @@ const BVOCInfo = () => {
                   May–June
                 </td>
               </tr>
-              <tr className="hover:bg-blue-50/50 transition">
+              <tr className="hover:bg-[#FFC067]/50 transition">
                 <td className="px-4 py-2 border border-gray-300 border-l border-r font-semibold">
                   Notification Release
                 </td>
@@ -108,7 +108,7 @@ const BVOCInfo = () => {
                   After 12th Board Results
                 </td>
               </tr>
-              <tr className="hover:bg-blue-50/50 transition">
+              <tr className="hover:bg-[#FFC067]/50 transition">
                 <td className="px-4 py-2 border border-gray-300 border-l border-r font-semibold">
                   Process
                 </td>

@@ -7,7 +7,7 @@ const UniversityStrip = () => {
   };
 
   return (
-    <div className="bg-[#3E96F4] text-white">
+    <div className="bg-[#FFC067] text-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-3">
         {/* centered heading with thin dividers */}
         <div className="w-full md:w-auto flex items-center justify-center md:justify-start gap-3">
@@ -20,7 +20,7 @@ const UniversityStrip = () => {
 
         {/* Contact */}
         <div className="flex items-center gap-3">
-          <p className="hidden md:block text-sm text-white/95">
+          <p className="hidden md:block text-sm text-gray-900/95">
             Get instant student support
           </p>
           <a

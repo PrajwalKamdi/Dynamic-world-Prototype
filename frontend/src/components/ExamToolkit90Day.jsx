@@ -110,7 +110,7 @@ export default function ExamToolkit90Day({
     NEET: [
       {
         phase: "Phase 1: Foundation",
-        color: "bg-blue-50",
+        color: "bg-[#FFC067]",
         goals: [
           "NCERT-first approach (Bio & Chem)",
           "Physics formulas + concept drills",
@@ -120,7 +120,7 @@ export default function ExamToolkit90Day({
       },
       {
         phase: "Phase 2: Practice",
-        color: "bg-blue-50",
+        color: "bg-[#FFC067]",
         goals: [
           "Sectional tests (3/week)",
           "Error logs + targeted revision",
@@ -130,7 +130,7 @@ export default function ExamToolkit90Day({
       },
       {
         phase: "Phase 3: Mock & Revise",
-        color: "bg-blue-50",
+        color: "bg-[#FFC067]",
         goals: [
           "Alt-day full mocks",
           "Weak-topic sprints",
@@ -348,7 +348,7 @@ export default function ExamToolkit90Day({
   return (
     <div className="min-h-screen w-full bg-white text-[#31393C]">
       {/* Header */}
-      <div className="bg-[#3E96F4] text-white">
+      <div className="bg-[#FFC067] text-black">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-6">
           <div className="flex items-center gap-3">
             <BookOpen className="h-6 w-6" aria-hidden />
@@ -356,7 +356,7 @@ export default function ExamToolkit90Day({
               Exam Toolkit: NEET, JEE, NATA, CET – 90-Day Plan
             </h1>
           </div>
-          <p className="mt-1 text-white/90 text-sm sm:text-base">
+          <p className="mt-1 text-gray-900/90 text-sm sm:text-base">
             Phase-wise schedule, daily blocks, mock cadence, and last-mile
             revision — optimized for speed & retention.
           </p>
@@ -561,7 +561,7 @@ export default function ExamToolkit90Day({
                 <div className="mt-4 flex flex-col gap-2">
                   <a
                     href="tel:+917887881060"
-                    className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#3E96F4] text-white px-4 py-2 font-semibold shadow-sm hover:bg-[#3187e2]"
+                    className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#FFC067] text-black px-4 py-2 font-semibold shadow-sm hover:bg-[#3187e2]"
                   >
                     <PhoneCall className="h-4 w-4" /> Quick Call
                   </a>

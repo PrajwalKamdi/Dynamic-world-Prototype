@@ -4,7 +4,7 @@ import DynamicForm from "../pages/DynamicForm";
 const Pillai01 = () => {
   return (
     <div className="min-h-screen w-full bg-white text-[#31393C]  rounded-lg">
-      <div className="bg-[#3E96F4] text-white">
+      <div className="bg-[#FFC067] text-black">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-6">
           <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
             {/* Logo */}
@@ -22,7 +22,7 @@ const Pillai01 = () => {
               <div className="mt-3 flex">
                 <h1 className="text-2xl lg:text-3xl font-bold leading-tight">
                   Pillai College Of Engineering:{" "}
-                  <p className=" text-white/80 text-xl">
+                  <p className=" text-gray-900/80 text-xl">
                     Admission {new Date().getFullYear()} - About, Courses &
                     Ranking
                   </p>

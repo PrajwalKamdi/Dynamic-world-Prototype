@@ -124,7 +124,7 @@ const AllTestimonials = () => {
         {/* Left Arrow */}
         <button
           onClick={scrollPrev}
-          className="p-2 rounded-full transition-all duration-300 bg-blue-600 hover:bg-blue-700 text-white hover:scale-110"
+          className="p-2 rounded-full transition-all duration-300 bg-[#FFC067] hover:bg-[#FFC067] text-black hover:scale-110"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +148,7 @@ const AllTestimonials = () => {
               onClick={() => scrollToVideo(index)}
               className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
                 activeDot === index
-                  ? "bg-blue-600 scale-125"
+                  ? "bg-[#FFC067] scale-125"
                   : "bg-gray-400 opacity-70 hover:opacity-100"
               }`}
             ></button>
@@ -158,7 +158,7 @@ const AllTestimonials = () => {
         {/* Right Arrow */}
         <button
           onClick={scrollNext}
-          className="p-2 rounded-full transition-all duration-300 bg-blue-600 hover:bg-blue-700 text-white hover:scale-110"
+          className="p-2 rounded-full transition-all duration-300 bg-[#FFC067] hover:bg-[#FFC067] text-black hover:scale-110"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

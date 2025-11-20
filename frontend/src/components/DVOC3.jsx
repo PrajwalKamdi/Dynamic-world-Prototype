@@ -95,7 +95,7 @@ const DVOC3 = () => {
                 {courseDetails.map((row, index) => (
                   <tr
                     key={index}
-                    className="hover:bg-blue-50 transition-colors"
+                    className="hover:bg-[#FFC067] text-black transition-colors"
                   >
                     <td className="border border-gray-300 py-2 px-3 font-semibold text-[#31393C]">
                       {row.aspect}

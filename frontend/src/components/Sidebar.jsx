@@ -66,7 +66,7 @@ const Sidebar = ({
 
                       <span className="flex items-center gap-2 shrink-0">
                         {items.length > 0 && (
-                          // <span className="hidden sm:inline-flex items-center justify-center px-2 py-0.5 rounded-full text-[11px] font-medium bg-blue-50 text-blue-700 ring-1 ring-blue-100">
+                          // <span className="hidden sm:inline-flex items-center justify-center px-2 py-0.5 rounded-full text-[11px] font-medium bg-[#FFC067] text-blue-700 ring-1 ring-blue-100">
                           //   {items.length} k
                           // </span>
 
@@ -112,7 +112,7 @@ const Sidebar = ({
                                   className={`w-full text-left px-2.5 py-2 rounded-md text-[13px] sm:text-sm transition-colors truncate
                                   ${
                                     canClick
-                                      ? "text-gray-700 hover:bg-blue-50 hover:text-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
+                                      ? "text-gray-700 hover:bg-[#FFC067] hover:text-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
                                       : "text-gray-400 cursor-not-allowed"
                                   }`}
                                   title={item}
@@ -133,7 +133,7 @@ const Sidebar = ({
                   href="https://dynamic-world-study-abroad.onrender.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-blue-600 text-white font-medium transition-all duration-300 hover:bg-blue-700 hover:shadow-md w-full"
+                  className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-[#FFC067] text-black font-medium transition-all duration-300 hover:bg-[#FFC067] hover:shadow-md w-full"
                 >
                   Study Abroad
                   <img src="https://res.cloudinary.com/dtaitsw4r/image/upload/v1760779899/studyAbroad_cbkald.png" alt="" className="h-8 w-10" />

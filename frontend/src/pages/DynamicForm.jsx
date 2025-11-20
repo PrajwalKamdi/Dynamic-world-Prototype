@@ -374,8 +374,8 @@ const DynamicForm = ({ title }) => {
             rounded-xl px-4 py-3 text-sm sm:text-base font-semibold text-white transition
             ${
               !isValid || submitting
-                ? "bg-[#3E96F4]/60 cursor-not-allowed"
-                : "bg-[#3E96F4] hover:brightness-95 active:translate-y-[1px]"
+                ? "bg-[#FFC067]/60 cursor-not-allowed"
+                : "bg-[#FFC067] text-black hover:brightness-95 active:translate-y-[1px]"
             }
             shadow-[0_6px_20px_rgba(62,150,244,0.35)]
           `}

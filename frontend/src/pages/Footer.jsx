@@ -125,7 +125,7 @@ const Footer = () => {
                     }
                     className="hover:text-blue-400 transition-colors duration-200 flex items-center gap-2 text-sm"
                   >
-                    <span className="w-0 group-hover:w-2 h-0.5 bg-blue-400 transition-all duration-200"></span>
+                    <span className="w-0 group-hover:w-2 h-0.5 bg-[#FFC067] transition-all duration-200"></span>
                     Home
                   </NavLink>
                 </li>
@@ -139,7 +139,7 @@ const Footer = () => {
                     }
                     className="hover:text-blue-400 transition-colors duration-200 flex items-center gap-2 text-sm"
                   >
-                    <span className="w-0 group-hover:w-2 h-0.5 bg-blue-400 transition-all duration-200"></span>
+                    <span className="w-0 group-hover:w-2 h-0.5 bg-[#FFC067] transition-all duration-200"></span>
                     About Us
                   </NavLink>
                 </li>
@@ -153,7 +153,7 @@ const Footer = () => {
                     }
                     className="hover:text-blue-400 transition-colors duration-200 flex items-center gap-2 text-sm"
                   >
-                    <span className="w-0 group-hover:w-2 h-0.5 bg-blue-400 transition-all duration-200"></span>
+                    <span className="w-0 group-hover:w-2 h-0.5 bg-[#FFC067] transition-all duration-200"></span>
                     Services
                   </NavLink>
                 </li>
@@ -167,7 +167,7 @@ const Footer = () => {
                     }
                     className="hover:text-blue-400 transition-colors duration-200 flex items-center gap-2 text-sm"
                   >
-                    <span className="w-0 group-hover:w-2 h-0.5 bg-blue-400 transition-all duration-200"></span>
+                    <span className="w-0 group-hover:w-2 h-0.5 bg-[#FFC067] transition-all duration-200"></span>
                     Blog
                   </NavLink>
                 </li>
@@ -181,7 +181,7 @@ const Footer = () => {
                     }
                     className="hover:text-blue-400 transition-colors duration-200 flex items-center gap-2 text-sm"
                   >
-                    <span className="w-0 group-hover:w-2 h-0.5 bg-blue-400 transition-all duration-200"></span>
+                    <span className="w-0 group-hover:w-2 h-0.5 bg-[#FFC067] transition-all duration-200"></span>
                     Contact
                   </NavLink>
                 </li>
@@ -340,7 +340,7 @@ const Footer = () => {
                 href="https://wa.me/917887881060"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#3e96f4] hover:to-purple-500 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 text-sm"
+                className="inline-flex items-center gap-2 bg-[#FFC067] hover:to-purple-500 text-black font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 text-sm"
               >
                 Get Free Counseling
               </a>

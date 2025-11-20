@@ -11,7 +11,7 @@ const Immegration02 = () => {
 
   return (
     <section className="lg:m-5">
-      <div className="relative mx-auto max-w-7xl lg:rounded-2xl bg-[#3E96F4] px-2 lg:px-5 py-8 text-white">
+      <div className="relative mx-auto max-w-7xl lg:rounded-2xl bg-[#FFC067] px-2 lg:px-5 py-8 text-black">
         {/* soft overlay glow */}
         <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-white/10 via-transparent to-white/10" />
 
@@ -29,7 +29,7 @@ const Immegration02 = () => {
               <p className="mt-2 text-sm text-gray-600">{desc}</p>
 
               {/* hover accent */}
-              <div className="mt-4 h-0.5 w-0 bg-[#3E96F4] transition-all duration-300 group-hover:w-16" />
+              <div className="mt-4 h-0.5 w-0 bg-[#FFC067] transition-all duration-300 group-hover:w-16" />
             </article>
           ))}
         </div>
@@ -37,7 +37,7 @@ const Immegration02 = () => {
         {/* bottom blurb */}
         <div className="mt-8 rounded-2xl border border-white/30 bg-white/10 p-6 backdrop-blur">
           <h2 className="text-xl font-bold tracking-tight">Immigration Services</h2>
-          <p className="mt-2 max-w-3xl text-sm text-white/90">
+          <p className="mt-2 max-w-3xl text-sm text-gray-900/90">
             We offer comprehensive support for a range of immigration needs — from renewing your visa
             to obtaining work permits and legal guidance.
           </p>

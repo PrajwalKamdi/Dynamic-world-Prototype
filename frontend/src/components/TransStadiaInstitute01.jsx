@@ -5,7 +5,7 @@ import { MapPin } from "lucide-react";
 const TransStadiaInstitute01 = () => {
   return (
     <div className="min-h-screen w-full bg-white ">
-      <div className="bg-[#3E96F4] text-white">
+      <div className="bg-[#FFC067] text-black">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-4 sm:py-6">
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6">
             {/* Logo */}
@@ -24,7 +24,7 @@ const TransStadiaInstitute01 = () => {
                 <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold leading-tight">
                   TransStadia Institute Programs:
                 </h1>
-                <p className="mt-1 text-base  lg:text-xl text-white/80 font-semibold">
+                <p className="mt-1 text-base  lg:text-xl text-gray-900/80 font-semibold">
                   Admission {new Date().getFullYear()}  — 
                   About, Courses & Ranking
                 </p>

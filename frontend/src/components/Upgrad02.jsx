@@ -94,7 +94,7 @@ const Upgrad02 = () => {
             </div>
 
             {/* Note / Callout */}
-            <div className="mt-4 rounded-xl border border-[#3E96F4]/30 bg-[#3E96F4]/5 p-4 md:p-5">
+            <div className="mt-4 rounded-xl border border-[#3E96F4]/30 bg-[#FFC067]/5 p-4 md:p-5">
               <p className="text-sm  text-[#31393C]">
                 <span className="font-semibold text-[#3E96F4]">
                   Please Note:
@@ -157,7 +157,7 @@ const Upgrad02 = () => {
             <div className="pt-2 flex flex-col sm:flex-row gap-3">
               <a
                 href="tel:+917887881060"
-                className="inline-flex items-center justify-center rounded-xl border border-[#3E96F4] px-5 py-3 text-[#3E96F4] text-sm md:text-base font-medium hover:bg-[#3E96F4]/5 transition"
+                className="inline-flex items-center justify-center rounded-xl border border-[#3E96F4] px-5 py-3 text-[#3E96F4] text-sm md:text-base font-medium hover:bg-[#FFC067]/5 transition"
               >
                 Get Counselling
               </a>

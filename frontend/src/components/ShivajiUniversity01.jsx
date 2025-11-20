@@ -7,7 +7,7 @@ const ShivajiUniversity01 = () => {
   return (
     <div className="w-full bg-white text-[#31393C]">
       {/* Top Header */}
-      <div className="bg-[#3E96F4] text-white">
+      <div className="bg-[#FFC067] text-black">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-6">
           <div className="flex items-center gap-5">
             <div className="shrink-0">

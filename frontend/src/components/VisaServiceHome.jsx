@@ -3,8 +3,8 @@ import CalendyButton from "./CalendyButton";
 const VisaServiceHome = () => {
   return (
     <div className={` w-full`}>
-      <header className="bg-[#3E96F4] py-5">
-        <h2 className="text-3xl px-5 lg:px-8 text-left md:text-4xl font-sans tracking-wide font-semibold text-white">
+      <header className="bg-[#FFC067] text-black py-5">
+        <h2 className="text-3xl px-5 lg:px-8 text-left md:text-4xl font-sans tracking-wide font-semibold text-black">
           Visa Services
         </h2>
       </header>

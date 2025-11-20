@@ -138,7 +138,7 @@ const Law02 = () => {
 
             <div className="overflow-x-auto border border-gray-200 rounded-lg">
               <table className="min-w-full table-auto text-left rounded-2xl">
-                <thead className="bg-[#3E96F4] text-white">
+                <thead className="bg-[#FFC067] text-black">
                   <tr>
                     <th
                       scope="col"
@@ -158,7 +158,7 @@ const Law02 = () => {
                   {lawColleges.map((item, index) => (
                     <tr
                       key={index}
-                      className="odd:bg-gray-50 even:bg-gray-100 hover:bg-blue-50 transition-colors"
+                      className="odd:bg-gray-50 even:bg-gray-100 hover:bg-[#FFC067] text-black transition-colors"
                     >
                       <td className="px-6 py-4 whitespace-normal text-xs lg:text-sm  font-medium text-gray-900">
                         {item.college}
@@ -181,7 +181,7 @@ const Law02 = () => {
 
             <div className="overflow-x-auto border border-gray-200 rounded-lg">
               <table className="min-w-full table-auto text-left">
-                <thead className="bg-[#3E96F4] text-white">
+                <thead className="bg-[#FFC067] text-black">
                   <tr>
                     <th
                       scope="col"
@@ -201,7 +201,7 @@ const Law02 = () => {
                   {mumbaiLawColleges.map((item, index) => (
                     <tr
                       key={index}
-                      className="odd:bg-gray-50 even:bg-gray-100 hover:bg-blue-50 transition-colors"
+                      className="odd:bg-gray-50 even:bg-gray-100 hover:bg-[#FFC067] text-black transition-colors"
                     >
                       <td className="px-6 py-4 whitespace-normal text-xs lg:text-sm font-medium text-gray-900">
                         {item.college}

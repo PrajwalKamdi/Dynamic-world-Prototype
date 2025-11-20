@@ -139,7 +139,7 @@ const ContactUs2 = () => {
   return (
     <section className="w-full bg-gradient-to-b from-white via-[#f6f8fc] to-white">
       {/* Top banner */}
-      <div className="bg-[#3E96F4] text-white">
+      <div className="bg-[#FFC067] text-black">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-semibold tracking-[0.3em] uppercase">
@@ -148,7 +148,7 @@ const ContactUs2 = () => {
             <h1 className="mt-2 text-2xl sm:text-3xl font-bold tracking-tight">
               Visit or Call a Dynamic World Office
             </h1>
-            <p className="mt-2 text-white/85">
+            <p className="mt-2 text-gray-900/85">
               Indian offices listed first for your convenience.
             </p>
           </div>

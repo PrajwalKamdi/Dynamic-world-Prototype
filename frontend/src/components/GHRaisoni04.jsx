@@ -23,7 +23,7 @@ const GHRaisoni04 = () => {
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white rounded-xl shadow border border-gray-200">
             <thead>
-              <tr className="bg-[#3E96F4]/10">
+              <tr className="bg-[#FFC067]/10">
                 <th className="py-3 px-4 text-left font-semibold text-gray-800">
                   Courses
                 </th>

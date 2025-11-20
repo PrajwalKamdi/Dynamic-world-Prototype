@@ -88,10 +88,10 @@ export default function OnlineUniverSity() {
   return (
     <div className="min-h-screen bg-[#EDEEEB] text-[#31393C]">
       {/* Header */}
-      <header className="bg-[#3E96F4] text-white py-6">
+      <header className="bg-[#FFC067] text-black py-6">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
           <h1 className="text-2xl md:text-3xl font-bold">Top Universities</h1>
-          <p className="text-white/90 mt-1">
+          <p className="text-gray-900/90 mt-1">
             Browse all universities and open details in one click.
           </p>
 

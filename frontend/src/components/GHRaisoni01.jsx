@@ -6,7 +6,7 @@ import DynamicForm from "../pages/DynamicForm";
 const GHRaisoni01 = () => {
   return (
     <div className="">
-      <div className="bg-[#3E96F4] text-white p-5 flex justify-start items-center gap-5">
+      <div className="bg-[#FFC067] text-black p-5 flex justify-start items-center gap-5">
         <div className="">
           <img
             src="https://res.cloudinary.com/dtaitsw4r/image/upload/v1759919778/Raisoni_University-Regular_Admission_adnnjv.svg"

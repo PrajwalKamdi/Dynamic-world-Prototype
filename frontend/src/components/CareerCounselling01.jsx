@@ -2,12 +2,12 @@ import { useState } from "react";
 
 export const CareerHero = () => {
   return (
-    <section className="w-full bg-[#3E96F4] text-white">
+    <section className="w-full bg-[#FFC067] text-black">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-8">
         <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">
           HIGHWAY TO A BRIGHTER CAREER
         </h1>
-        <p className="mt-4 text-white/90 text-sm leading-relaxed">
+        <p className="mt-4 text-gray-900/90 text-sm leading-relaxed">
           Studying made easy through suggestions and support always delivers
           satisfying results. Career needs focus, planning and advice. We
           balance all aspects of your career in a better way. Our experts are
@@ -19,7 +19,7 @@ export const CareerHero = () => {
           partnering with Dynamic World and plan, implement and achieve your
           success.
         </p>
-        <p className="mt-3 text-white/90 text-sm leading-relaxed">
+        <p className="mt-3 text-gray-900/90 text-sm leading-relaxed">
           MEDICAL, ENGINEERING, ARCHITECTURE, AGRICULTURE, PHARMACY, MBA, BBA
           whichever stream you opt for career planning is essential through
           expert career counselling. Factors like self-efficiency, satisfaction,
@@ -56,7 +56,7 @@ const TreeNode = ({ label, children = [] }) => {
             </span>
           </button>
         ) : (
-          <span className="mt-2 h-2 w-2 rounded-full bg-[#3E96F4] ring-2 ring-[#EDEEEB]" />
+          <span className="mt-2 h-2 w-2 rounded-full bg-[#FFC067] ring-2 ring-[#EDEEEB]" />
         )}
         <div className="rounded-lg bg-white px-3 py-2 text-sm leading-5 text-[#31393C] ring-1 ring-gray-200 shadow-sm">
           {label}
@@ -131,8 +131,8 @@ export const WhatWeProvide = () => {
     <section className="bg-[#F8FAFC]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-8">
         <div className="rounded-2xl ring-1 ring-gray-200 shadow-sm overflow-hidden">
-          <div className="bg-[#3E96F4] px-6 py-4">
-            <h2 className="text-lg font-semibold text-white">
+          <div className="bg-[#FFC067] text-black px-6 py-4">
+            <h2 className="text-lg font-semibold text-black">
               WHAT ARE WE PROVIDING?
             </h2>
           </div>

@@ -4,7 +4,7 @@ import DynamicForm from '../pages/DynamicForm'
 const PuneInstituteOfManagementStudies01 = () => {
   return (
     <div className="w-full bg-white ">
-      <div className="bg-[#3E96F4] text-white">
+      <div className="bg-[#FFC067] text-black">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-6">
           <div className="flex flex-col justify-start items-center md:flex-row gap-6  md:items-center">
             {/* Logo */}
@@ -23,7 +23,7 @@ const PuneInstituteOfManagementStudies01 = () => {
                 <h1 className="text-2xl sm:text-3xl font-bold leading-tight">
                   Pune Institute Of Management Studies
                 </h1>
-                <p className="mt-1 text-sm sm:text-[15px] text-white/80">
+                <p className="mt-1 text-sm sm:text-[15px] text-gray-900/80">
                   Admission {new Date().getFullYear()} - About, Courses &
                   Ranking
                 </p>

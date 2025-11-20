@@ -99,7 +99,7 @@ const AIUniversity02 = () => {
               {highlights.map((item, index) => (
                 <tr
                   key={index}
-                  className="odd:bg-gray-50 even:bg-gray-100 hover:bg-blue-50 transition-colors"
+                  className="odd:bg-gray-50 even:bg-gray-100 hover:bg-[#FFC067] text-black transition-colors"
                 >
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-left">
                     {item.particular}
@@ -113,8 +113,8 @@ const AIUniversity02 = () => {
           </table>
         </div>
 
-        <div className="bg-[#3E96F4] mt-5 rounded-2xl p-5 w-full">
-          <h3 className="lg:text-2xl font-semibold text-white text-center mb-3">
+        <div className="bg-[#FFC067] text-black mt-5 rounded-2xl p-5 w-full">
+          <h3 className="lg:text-2xl font-semibold text-black text-center mb-3">
             Need more info about Chhatrapati Shivaji Maharaj University?
           </h3>
 

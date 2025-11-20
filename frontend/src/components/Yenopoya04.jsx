@@ -22,7 +22,7 @@ const Yenopoya04 = () => {
       </p>
       {/* Courses Table */}
       <div class="w-full max-w-6xl mx-auto mt-8 text-sm space-y-2">
-        <div class="bg-[#3E96F4] text-white rounded-t-2xl px-5 py-3">
+        <div class="bg-[#FFC067] text-black rounded-t-2xl px-5 py-3">
           <h2 class="text-base md:text-lg font-semibold">
             Yenepoya University — Courses, Fees, Eligibility & Exams
           </h2>

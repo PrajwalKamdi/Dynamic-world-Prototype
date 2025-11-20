@@ -99,14 +99,14 @@ const Management02 = () => {
           depending on the institute and program level.
         </p>
         <section className="my-5">
-          <div className="bg-[#3E96F4] text-center my-2  rounded-2xl">
-            <h3 className="text-lg lg:text-xl font-semibold text-white py-2 ">
+          <div className="bg-[#FFC067] text-center my-2  rounded-2xl">
+            <h3 className="text-lg lg:text-xl font-semibold text-black py-2 ">
               Top Management Colleges in Pune and Mumbai
             </h3>
           </div>
           <div className="overflow-x-auto rounded-2xl shadow-md border border-[#EDEEEB] ">
             <table className="min-w-full border-collapse">
-              <thead className="bg-[#3E96F4] text-white">
+              <thead className="bg-[#FFC067] text-black">
                 <tr>
                   <th className="px-2 py-4 lg:px-6 lg:py-4 text-xs lg:text-sm text-center lg:text-left font-semibold uppercase tracking-wide">
                     Pune Colleges

@@ -320,8 +320,8 @@ const Blog_Form = ({ title, formRef }) => {
                   className={`w-full rounded-lg px-4 py-3 text-white font-semibold transition
                     ${
                       !isValid || submitting
-                        ? "bg-blue-300 cursor-not-allowed"
-                        : "bg-blue-600 hover:bg-blue-700"
+                        ? "bg-[#FFC067] cursor-not-allowed"
+                        : "bg-[#FFC067] hover:bg-[#FFC067]"
                     }
                     focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400`}
                 >

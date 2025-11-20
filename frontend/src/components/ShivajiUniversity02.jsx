@@ -86,7 +86,7 @@ const ShivajiUniversity02 = () => {
               {highlights.map((item, index) => (
                 <tr
                   key={index}
-                  className="odd:bg-gray-50 even:bg-gray-100 hover:bg-blue-50 transition-colors"
+                  className="odd:bg-gray-50 even:bg-gray-100 hover:bg-[#FFC067] text-black transition-colors"
                 >
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                     {item.particular}

@@ -70,7 +70,7 @@ const InfoTable = ({ rows = [] }) => (
             key={idx}
             className={`${
               idx % 2 === 0 ? "bg-white" : "bg-gray-50"
-            } hover:bg-blue-50 transition`}
+            } hover:bg-[#FFC067] text-black transition`}
           >
             <td className="align-top px-6 py-3 text-sm lg:text-base text-gray-900">
               {row.name}

@@ -9,7 +9,7 @@ const PlaceHolder = () => {
           <div className="h-4 w-96 mx-auto bg-gray-200 rounded animate-pulse" />
         </div>
         <div className="bg-white rounded-lg shadow-sm overflow-hidden">
-          <div className="bg-blue-600 px-8 py-6">
+          <div className="bg-[#FFC067] text-black px-8 py-6">
             <div className="h-6 w-56 bg-white/20 rounded animate-pulse mb-2" />
             <div className="h-4 w-full bg-white/10 rounded animate-pulse" />
           </div>

@@ -77,7 +77,7 @@ export default function ArhamInternationalInstitute02() {
         </div>
 
         {/* Video Section */}
-        <div className="bg-[#3E96F4] text-white rounded-xl sm:rounded-2xl p-4 sm:p-6">
+        <div className="bg-[#FFC067] text-black rounded-xl sm:rounded-2xl p-4 sm:p-6">
           <div className="text-center mb-4">
             <h3 className="text-lg sm:text-xl font-semibold">
               Need more info about Arham International Institute?

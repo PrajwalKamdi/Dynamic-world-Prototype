@@ -3,14 +3,14 @@ import CalendyButton from "./CalendyButton";
 
 const Pill = ({ children }) => (
   <span className="inline-flex items-center gap-2 rounded-full bg-[#EDEEEB] px-2.5 sm:px-3 py-1 text-[11px] sm:text-xs font-semibold text-[#31393C]">
-    <span className="h-1.5 w-1.5 rounded-full bg-[#3E96F4]" />
+    <span className="h-1.5 w-1.5 rounded-full bg-[#FFC067]" />
     {children}
   </span>
 );
 
 const Bullet = ({ children }) => (
   <li className="flex items-start gap-3">
-    <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#3E96F4]/10 ring-1 ring-[#3E96F4]/30">
+    <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#FFC067]/10 ring-1 ring-[#3E96F4]/30">
       <svg
         viewBox="0 0 24 24"
         className="h-3.5 w-3.5 text-[#3E96F4]"
@@ -39,7 +39,7 @@ const ImmigrationHome = () => {
             <h1 className="mt-3 text-xl sm:text-2xl lg:text-4xl font-bold tracking-tight text-[#31393C]">
               Immigration Services
             </h1>
-            <div className="mt-3 h-1 w-24 sm:w-28 rounded-full bg-[#3E96F4]" />
+            <div className="mt-3 h-1 w-24 sm:w-28 rounded-full bg-[#FFC067]" />
           </div>
 
           {/* Intro copy */}
@@ -121,7 +121,7 @@ const ImmigrationHome = () => {
                 <h3 className="text-base sm:text-lg font-semibold text-white">
                   Get a Free Consultation
                 </h3>
-                <p className="mt-1 text-xs sm:text-sm text-white/90">
+                <p className="mt-1 text-xs sm:text-sm text-gray-900/90">
                   Share your details and our expert will reach out with the next
                   steps.
                 </p>

@@ -147,7 +147,7 @@ export default function DistanceUniversityDetails() {
   if (loading) {
     return (
       <div className="min-h-screen bg-[#EDEEEB]">
-        <header className="bg-[#3E96F4] text-white">
+        <header className="bg-[#FFC067] text-black">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
             <div className="h-7 w-64 bg-white/30 rounded animate-pulse" />
             <div className="mt-2 h-4 w-72 bg-white/20 rounded animate-pulse" />
@@ -172,7 +172,7 @@ export default function DistanceUniversityDetails() {
             <div className="mt-4 flex gap-2">
               <button
                 onClick={fetchData}
-                className="inline-flex items-center rounded-lg px-4 py-2 text-sm font-medium bg-[#3E96F4] text-white"
+                className="inline-flex items-center rounded-lg px-4 py-2 text-sm font-medium bg-[#FFC067] text-black"
               >
                 Retry
               </button>
@@ -194,7 +194,7 @@ export default function DistanceUniversityDetails() {
   return (
     <div className="text-[#31393C]">
       {/* ====== Header / Breadcrumb ====== */}
-      <header className="bg-[#3E96F4] text-white">
+      <header className="bg-[#FFC067] text-black">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
           <nav className="flex items-center gap-2 text-sm opacity-95">
             <Link to="/services/distance-education" className="hover:underline">Distance Education</Link>
@@ -236,7 +236,7 @@ export default function DistanceUniversityDetails() {
                       href={website}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center rounded-full bg-[#3E96F4] text-white text-xs sm:text-sm px-3 py-1.5 shadow hover:opacity-95"
+                      className="inline-flex items-center rounded-full bg-[#FFC067] text-black text-xs sm:text-sm px-3 py-1.5 shadow hover:opacity-95"
                     >
                       Visit Website
                     </a>
@@ -335,7 +335,7 @@ export default function DistanceUniversityDetails() {
                       .map((c, idx) => {
                         const fees = typeof c?.fees === "number" ? (c.fees === 0 ? "—" : formatINR(c.fees)) : c?.fees ?? "—";
                         return (
-                          <tr key={`${c?.courseName}-${c?.specialization}-${idx}`} className="odd:bg-white even:bg-gray-50 hover:bg-[#3E96F4]/5">
+                          <tr key={`${c?.courseName}-${c?.specialization}-${idx}`} className="odd:bg-white even:bg-gray-50 hover:bg-[#FFC067]/5">
                             <TableCell bold>{firstNonEmpty(c?.courseName)}</TableCell>
                             <TableCell>{firstNonEmpty(c?.specialization)}</TableCell>
                             <TableCell>{firstNonEmpty(c?.duration)}</TableCell>

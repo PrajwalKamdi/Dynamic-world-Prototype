@@ -92,8 +92,8 @@ export default function Blogs() {
               <NavLink
                 to="/blogs/online-education"
                 onClick={() => window.scrollTo(0, 0)} // use arrow function + scrollTo
-                className="inline-flex items-center justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white
-             w-[130px] transition hover:bg-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
+                className="inline-flex items-center justify-center rounded-md bg-[#FFC067] text-black px-3 py-2 text-sm font-semibold text-black
+             w-[130px] transition hover:bg-[#FFC067] text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
               >
                 Read More <span className="ml-1 text-base">&rarr;</span>
               </NavLink>
@@ -142,8 +142,8 @@ export default function Blogs() {
               <NavLink
                 to="/blogs/one-year-executive-mba"
                 onClick={() => window.scrollTo(0, 0)} // use arrow function + scrollTo
-                className="inline-flex items-center justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white
-             w-[130px] transition hover:bg-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
+                className="inline-flex items-center justify-center rounded-md bg-[#FFC067] text-black px-3 py-2 text-sm font-semibold text-black
+             w-[130px] transition hover:bg-[#FFC067] text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
               >
                 Read More <span className="ml-1 text-base">&rarr;</span>
               </NavLink>
@@ -192,8 +192,8 @@ export default function Blogs() {
               <NavLink
                 to="distance-learning"
                 onClick={() => window.scrollTo(0, 0)} // use arrow function + scrollTo
-                className="inline-flex items-center justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white
-             w-[130px] transition hover:bg-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
+                className="inline-flex items-center justify-center rounded-md bg-[#FFC067] text-black px-3 py-2 text-sm font-semibold text-black
+             w-[130px] transition hover:bg-[#FFC067] text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
               >
                 Read More <span className="ml-1 text-base">&rarr;</span>
               </NavLink>

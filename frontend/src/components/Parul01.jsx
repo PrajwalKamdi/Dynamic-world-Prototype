@@ -10,7 +10,7 @@ const Parul01 = () => {
     <div className="bg-gray-50 ">
       <main className="bg-white">
         {/* Header */}
-        <div className="bg-[#3E96F4] text-white">
+        <div className="bg-[#FFC067] text-black">
           <div className="mx-auto max-w-7xl px-6 py-8 flex items-center gap-4">
             <img
               src="https://res.cloudinary.com/dtaitsw4r/image/upload/v1759919770/Parul_University-Regular_Admission_yinscn.svg"

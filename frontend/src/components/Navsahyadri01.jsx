@@ -5,7 +5,7 @@ import DynamicForm from "../pages/DynamicForm";
 const NavSahyadri01 = () => {
   return (
     <div className="">
-      <div className="text-white bg-[#3e96f4] p-5">
+      <div className="bg-[#FFC067] text-black p-5">
         <div className="flex items-start gap-5">
           <div className="h-20 w-20 lg:w-50">
             <img src="https://res.cloudinary.com/dtaitsw4r/image/upload/v1759919767/Navsahyadri_Group_of_Institute-Regular_Admission_mqpkyh.svg"></img>
@@ -16,7 +16,7 @@ const NavSahyadri01 = () => {
               Navsahyadri Group of Institutes:
             </h2>
             {/* University Name: Different and larger font size as requested */}
-            <h2 className="text-lg text-left md:text-xl font-medium leading-tight text-white/80">
+            <h2 className="text-lg text-left md:text-xl font-medium leading-tight text-black/80">
               Admission {new Date().getFullYear()} – About, Courses & Ranking
             </h2>
           </div>

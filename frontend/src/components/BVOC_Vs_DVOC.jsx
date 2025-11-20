@@ -131,7 +131,7 @@ export default function BVOCvsMVOC({}) {
   return (
     <div className="min-h-screen w-full bg-white text-[#31393C]">
       {/* HERO */}
-      <section className="relative overflow-hidden bg-[#3E96F4] text-white">
+      <section className="relative overflow-hidden bg-[#FFC067] text-black">
         <div
           className="absolute inset-0 opacity-10 pointer-events-none"
           aria-hidden
@@ -159,7 +159,7 @@ export default function BVOCvsMVOC({}) {
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               BVOC vs MVOC: Which is Right for You in <CurrentYear />?
             </h1>
-            <p className="mt-3 text-white/90 text-sm sm:text-base md:text-lg">
+            <p className="mt-3 text-gray-900/90 text-sm sm:text-base md:text-lg">
               Clear, practical guidance to choose between undergraduate BVOC and
               postgraduate MVOC—eligibility, learning style, careers, and more.
             </p>

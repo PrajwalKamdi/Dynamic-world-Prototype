@@ -43,7 +43,7 @@ function ShivajiUniversity03() {
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
                 {admissionProcess.map((item, index) => (
-                  <tr key={index} className="odd:bg-gray-50 even:bg-gray-100 hover:bg-blue-50 transition-colors">
+                  <tr key={index} className="odd:bg-gray-50 even:bg-gray-100 hover:bg-[#FFC067] text-black transition-colors">
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                       {item.process}
                     </td>

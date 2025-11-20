@@ -188,7 +188,7 @@ const DVOC2 = () => {
                   {programs.map((item, index) => (
                     <tr
                       key={index}
-                      className="hover:bg-blue-50 transition-colors border-b border-gray-200"
+                      className="hover:bg-[#FFC067] text-black transition-colors border-b border-gray-200"
                     >
                       <td className="py-2 px-3 text-sm  font-semibold border border-gray-200 align-top">
                         {item.category}

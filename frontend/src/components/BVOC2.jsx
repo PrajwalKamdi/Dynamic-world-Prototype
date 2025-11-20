@@ -224,7 +224,7 @@ const UniversityCard = ({ name, logo, desc, programs }) => {
           </thead>
           <tbody>
             {visiblePrograms.map((program, idx) => (
-              <tr key={idx} className="hover:bg-blue-50/60 transition-colors">
+              <tr key={idx} className="hover:bg-[#FFC067]/60 transition-colors">
                 <td className="border border-gray-300 py-2 px-3  text-gray-800 text-sm">
                   {program}
                 </td>
@@ -239,7 +239,7 @@ const UniversityCard = ({ name, logo, desc, programs }) => {
         <div className="mt-3 flex justify-center">
           <button
             onClick={() => setExpanded((v) => !v)}
-            className="inline-flex items-center gap-2 rounded-md border border-[#3E96F4]/40 text-[#3E96F4] hover:bg-blue-50 px-3 py-1.5 text-xs sm:text-sm font-semibold transition"
+            className="inline-flex items-center gap-2 rounded-md border border-[#3E96F4]/40 text-[#3E96F4] hover:bg-[#FFC067] text-black px-3 py-1.5 text-xs sm:text-sm font-semibold transition"
             aria-expanded={expanded}
           >
             {expanded

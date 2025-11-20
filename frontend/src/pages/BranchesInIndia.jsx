@@ -65,7 +65,7 @@ const BranchLocations = () => {
 
             <a
               href={`tel:+91${branch.phone}`}
-              className="inline-block bg-[#3E96F4] text-white px-5 py-2 rounded-lg hover:bg-[#31393c] transition mb-3"
+              className="inline-block bg-[#FFC067] text-black px-5 py-2 rounded-lg hover:bg-[#31393c] transition mb-3"
             >
               Call Now
             </a>

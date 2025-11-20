@@ -113,13 +113,13 @@ const Pharmacy02 = () => {
 
         {/* Mumbai Colleges Table */}
         <section className="mb-10 overflow-x-auto">
-          <div className="bg-[#3E96F4] text-center my-2  rounded-2xl">
-            <h3 className="text-lg lg:text-xl font-semibold text-white py-2 px-2 ">
+          <div className="bg-[#FFC067] text-center my-2  rounded-2xl">
+            <h3 className="text-lg lg:text-xl font-semibold text-black py-2 px-2 ">
               Top Pharmacy Colleges In Mumbai
             </h3>
           </div>
           <table className="min-w-full bg-white border border-gray-300 rounded-xl  overflow-hidden">
-            <thead className="bg-[#3E96F4] text-white  border-gray-300">
+            <thead className="bg-[#FFC067] text-black  border-gray-300">
               <tr>
                 <th className="px-2 py-4 lg:px-6 lg:py-4 text-xs lg:text-sm text-center lg:text-leftfont-semibold uppercase tracking-wide">
                   College Name
@@ -146,13 +146,13 @@ const Pharmacy02 = () => {
 
         {/* Pune Colleges Table */}
         <section className="overflow-x-auto">
-          <div className="bg-[#3E96F4] text-center my-2  rounded-2xl">
-            <h3 className="text-lg lg:text-xl font-semibold text-white py-2 px-2 ">
+          <div className="bg-[#FFC067] text-center my-2  rounded-2xl">
+            <h3 className="text-lg lg:text-xl font-semibold text-black py-2 px-2 ">
               Top Pharmacy Colleges In Pune
             </h3>
           </div>
           <table className="min-w-full bg-white border border-gray-300 rounded-xl overflow-hidden">
-            <thead className="bg-[#3E96F4]  text-white border-gray-300">
+            <thead className="bg-[#FFC067] text-black border-gray-300">
               <tr>
                 <th className="px-2 py-4 lg:px-6 lg:py-4 text-xs lg:text-sm  lg:text-left font-semibold uppercase tracking-wide">
                   College Name

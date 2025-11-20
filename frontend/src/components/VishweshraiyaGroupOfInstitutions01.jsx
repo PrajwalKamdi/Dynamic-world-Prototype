@@ -5,7 +5,7 @@ import CalendyButton from "./CalendyButton";
 const Vishweshraiya01 = () => {
   return (
     <div className="text-[#31393C] ">
-      <div className="bg-[#3E96F4] text-white">
+      <div className="bg-[#FFC067] text-black">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-6">
           <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
             {/* Logo */}
@@ -25,7 +25,7 @@ const Vishweshraiya01 = () => {
                 <h1 className="text-2xl sm:text-3xl font-bold leading-tight">
                   Vishweshraiya Group of Institutions:
                 </h1>
-                <p className="font-semibold text-sm lg:text-xl text-white/80">
+                <p className="font-semibold text-sm lg:text-xl text-gray-900/80">
                   Admission {new Date().getFullYear()} - About, Courses &
                   Ranking
                 </p>

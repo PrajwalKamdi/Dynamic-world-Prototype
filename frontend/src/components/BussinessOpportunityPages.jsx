@@ -232,7 +232,7 @@ export const BusinessPartner01 = () => {
                     className="rounded-2xl border border-white/15 bg-white/10/20 px-4 py-4"
                   >
                     <Icon className="h-5 w-5 text-blue-200" />
-                    <p className="mt-2 text-lg font-semibold text-white">{value}</p>
+                    <p className="mt-2 text-lg font-semibold text-gray-900">{value}</p>
                     <p className="text-xs text-indigo-100/90">{label}</p>
                   </div>
                 ))}
@@ -267,7 +267,7 @@ export const BusinessPartner01 = () => {
             <div className="grid gap-10 lg:grid-cols-3">
               {servicePillars.map(({ icon: Icon, title, description, bullets }) => (
                 <div key={title} className="flex flex-col gap-4">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 shadow-sm">
+                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FFC067] text-blue-600 shadow-sm">
                     <Icon className="h-6 w-6" />
                   </div>
                   <h3 className="text-xl font-semibold text-slate-900">{title}</h3>
@@ -275,7 +275,7 @@ export const BusinessPartner01 = () => {
                   <ul className="ml-0 space-y-2 text-sm text-slate-600">
                     {bullets.map((item) => (
                       <li key={item} className="flex items-start gap-2">
-                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-blue-500" />
+                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#FFC067]" />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -391,7 +391,7 @@ export const BusinessPartner02 = () => {
     <section className="bg-slate-50 py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <span className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-blue-700">
+          <span className="inline-flex items-center gap-2 rounded-full bg-[#FFC067] px-3 py-1 text-xs font-semibold uppercase tracking-wide text-blue-700">
             Partner Experience
           </span>
           <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-slate-900">
@@ -442,14 +442,14 @@ export const BusinessPartner02 = () => {
             <div className="grid gap-6">
               {successPlaybook.map(({ icon: Icon, title, items }) => (
                 <div key={title} className="rounded-3xl bg-white shadow-xl ring-1 ring-slate-200 px-5 py-6">
-                  <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-blue-100 text-blue-600">
+                  <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[#FFC067] text-blue-600">
                     <Icon className="h-5 w-5" />
                   </div>
                   <h4 className="mt-4 text-lg font-semibold text-slate-900">{title}</h4>
                   <ul className="mt-4 space-y-2 text-sm text-slate-600">
                     {items.map((item) => (
                       <li key={item} className="flex items-start gap-2">
-                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-blue-500" />
+                        <span className="mt-1 h-1.5 w-1.5 rounded-full bg-[#FFC067]" />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -465,7 +465,7 @@ export const BusinessPartner02 = () => {
               <div className="mt-6 space-y-5">
                 {onboardingTimeline.map(({ phase, title, description }) => (
                   <div key={phase} className="flex gap-4">
-                    <div className="flex h-10 w-24 flex-shrink-0 items-center justify-center rounded-full bg-blue-50 text-sm font-semibold text-blue-600">
+                    <div className="flex h-10 w-24 flex-shrink-0 items-center justify-center rounded-full bg-[#FFC067] text-sm font-semibold text-blue-600">
                       {phase}
                     </div>
                     <div>
@@ -588,7 +588,7 @@ export const BusinessPartnerBenefits = () => {
                 key={title}
                 className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="inline-flex items-center justify-center rounded-xl bg-blue-50 text-blue-600 p-3 mb-4">
+                <div className="inline-flex items-center justify-center rounded-xl bg-[#FFC067] text-blue-600 p-3 mb-4">
                   <Icon className="h-6 w-6" />
                 </div>
                 <h3 className="text-lg font-semibold text-slate-900">
@@ -608,7 +608,7 @@ export const BusinessPartnerBenefits = () => {
                 key={title}
                 className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow"
               >
-                <div className="inline-flex items-center justify-center rounded-xl bg-blue-50 text-blue-600 p-3 mb-4">
+                <div className="inline-flex items-center justify-center rounded-xl bg-[#FFC067] text-blue-600 p-3 mb-4">
                   <Icon className="h-6 w-6" />
                 </div>
                 <h3 className="text-lg font-semibold text-slate-900">
@@ -617,7 +617,7 @@ export const BusinessPartnerBenefits = () => {
                 <ul className="mt-4 space-y-2 text-sm sm:text-base text-slate-600 leading-relaxed">
                   {items.map((item) => (
                     <li key={item} className="flex items-start gap-2">
-                      <span className="mt-1 h-1.5 w-1.5 rounded-full bg-blue-500" />
+                      <span className="mt-1 h-1.5 w-1.5 rounded-full bg-[#FFC067]" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -629,7 +629,7 @@ export const BusinessPartnerBenefits = () => {
           {/* Booklets */}
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <div className="flex items-center gap-3 mb-5">
-              <div className="inline-flex items-center justify-center rounded-xl bg-blue-50 text-blue-600 p-3">
+              <div className="inline-flex items-center justify-center rounded-xl bg-[#FFC067] text-blue-600 p-3">
                 <BookOpen className="h-6 w-6" />
               </div>
               <div>
@@ -647,7 +647,7 @@ export const BusinessPartnerBenefits = () => {
                   key={booklet}
                   className="flex items-center gap-2 rounded-xl border border-slate-100 bg-slate-50/70 px-3 py-2 text-sm font-medium text-slate-700"
                 >
-                  <span className="h-2 w-2 rounded-full bg-blue-500" />
+                  <span className="h-2 w-2 rounded-full bg-[#FFC067]" />
                   {booklet}
                 </div>
               ))}
@@ -758,7 +758,7 @@ export const BusinessPartnerCommission = () => {
                   ) : null}
                 </div>
                 <div className="flex md:justify-end">
-                  <div className="inline-flex items-center rounded-xl border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700">
+                  <div className="inline-flex items-center rounded-xl border border-blue-200 bg-[#FFC067] px-4 py-2 text-sm font-semibold text-blue-700">
                     {payout}
                   </div>
                 </div>

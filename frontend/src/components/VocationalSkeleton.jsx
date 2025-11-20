@@ -8,7 +8,7 @@ const VocationalSkeleton = () => {
   return (
     <div className="bg-white text-[#31393C]">
       {/* Header Skeleton */}
-      <header className="bg-[#3E96F4] text-white">
+      <header className="bg-[#FFC067] text-black">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-8">
           <Skeleton className="h-9 sm:h-5 w-32 max-w-2xl" />
           <Skeleton className="mt-3 h-10 w-2/3 max-w-md" />

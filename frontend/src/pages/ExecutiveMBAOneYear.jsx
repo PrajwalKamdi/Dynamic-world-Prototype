@@ -16,7 +16,7 @@ const ExecutiveMBAOneYear = () => {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           {/* Replace with your banner image/background if needed */}
-          <div className="absolute inset-0 bg-[#3E96F4]/80 backdrop-blur-[1px]" />
+          <div className="absolute inset-0 bg-[#FFC067]/80 backdrop-blur-[1px]" />
         </div>
 
         <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-10 py-16 sm:py-20 md:py-24">
@@ -27,7 +27,7 @@ const ExecutiveMBAOneYear = () => {
             <h1 className="mt-3 text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
               One-Year Executive MBA (EMBA)
             </h1>
-            <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-white/90">
+            <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-gray-900/90">
               Accelerate your leadership journey without pausing your career. A
               rigorous, industry-aligned program built for experienced
               professionals.
@@ -77,7 +77,7 @@ const ExecutiveMBAOneYear = () => {
             ].map((t) => (
               <span
                 key={t}
-                className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 ring-1 ring-blue-100"
+                className="inline-flex items-center rounded-full bg-[#FFC067] px-3 py-1 text-xs font-semibold text-blue-700 ring-1 ring-blue-100"
               >
                 {t}
               </span>

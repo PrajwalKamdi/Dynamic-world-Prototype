@@ -7,7 +7,7 @@ const PromotionStrip = ({
   ctaHref = "/results-and-updates",
 }) => {
   return (
-    <header className="w-full bg-[#3E96F4] px-4 sm:px-6 py-2 sm:py-3 shadow-md">
+    <header className="w-full bg-[#FFC067] text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md">
       <div className="max-w-7xl mx-auto flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         {/* Left: Logo + Brand */}
         <div className="flex items-center gap-3">
@@ -15,7 +15,7 @@ const PromotionStrip = ({
             <h1 className="text-white text-sm sm:text-base font-semibold leading-tight">
               Dynamic World – Career Guidance Experts
             </h1>
-            <p className="text-[10px] sm:text-xs text-blue-100">
+            <p className="text-[10px] sm:text-xs text-gray-900">
               1:1 Counselling • Results Updates • Admission Support
             </p>
           </div>
@@ -36,14 +36,14 @@ const PromotionStrip = ({
             </span>
 
             {/* Message */}
-            <p className="text-[10px] sm:text-xs text-white line-clamp-2">
+            <p className="text-[10px] sm:text-xs text-gray-900 line-clamp-2">
               {message}
             </p>
 
             {/* CTA */}
             <a
               href={ctaHref}
-              className="hidden md:inline-flex text-[10px] font-medium text-[#3E96F4] bg-white rounded-full px-3 py-[3px] hover:bg-blue-50 transition"
+              className="hidden md:inline-flex text-[10px] font-medium text-[#3E96F4] bg-white rounded-full px-3 py-[3px] hover:bg-[#FFC067] transition"
             >
               {ctaLabel}
             </a>

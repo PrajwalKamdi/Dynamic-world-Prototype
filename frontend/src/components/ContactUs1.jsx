@@ -17,7 +17,7 @@ const ContactUs1 = () => {
   return (
     <section className="w-full bg-gradient-to-b from-white via-[#f6f8fc] to-white text-[#0f172a]">
       {/* Top Header */}
-      <header className="bg-[#3E96F4] text-white">
+      <header className="bg-[#FFC067] text-black">
         <div className="mx-auto max-w-7xl py-10">
           <div className="flex flex-col items-center text-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/15 text-xs font-semibold tracking-[0.35em] px-3 py-1 uppercase">
@@ -26,7 +26,7 @@ const ContactUs1 = () => {
             <h1 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight">
               Contact Dynamic World
             </h1>
-            <p className="mt-2 max-w-2xl text-white/85">
+            <p className="mt-2 max-w-2xl text-gray-900/85">
               Reach out to our team via phone, email, or visit our head office.
             </p>
           </div>

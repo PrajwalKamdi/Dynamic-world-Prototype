@@ -6,7 +6,7 @@ const VocationCoursesHome = ({ short, title, para1, para2 }) => {
   return (
     <div className="bg-white text-[#31393C]">
       {/* Header */}
-      <header className="bg-[#3E96F4] text-white">
+      <header className="bg-[#FFC067] text-black">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-8">
           <span className="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-[#31393C]">
             {short} • India

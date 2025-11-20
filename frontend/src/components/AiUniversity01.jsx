@@ -5,7 +5,7 @@ import DynamicForm from "../pages/DynamicForm";
 const AIUniversity01 = () => {
   return (
     <div>
-      <div className="text-white bg-[#3e96f4] p-5 ">
+      <div className="bg-[#FFC067] text-black p-5 ">
         <div className="flex items-start gap-5">
           <div className="rounded-xl">
             <img
@@ -17,7 +17,7 @@ const AIUniversity01 = () => {
             <h2 className="text-2xl text-left font-bold">
               AI Universal University:
             </h2>
-            <h2 className="text-xl text-left md:text-2xl font-semibold text-white/80 leading-tight">
+            <h2 className="text-xl text-left md:text-2xl font-semibold text-black/80 leading-tight">
               Admission {new Date().getFullYear()} – About, Courses & Ranking
             </h2>
           </div>

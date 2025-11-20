@@ -264,7 +264,7 @@ const Section = ({ title, children }) => (
     id={title?.toLowerCase().replace(/[^a-z0-9]+/g, "-")}
   >
     <div className="mb-4 flex items-center gap-3">
-      <div className="h-6 w-1 rounded-full bg-[#3E96F4]" />
+      <div className="h-6 w-1 rounded-full bg-[#FFC067]" />
       <h2 className="text-xl md:text-2xl font-semibold text-[#31393C]">
         {title}
       </h2>
@@ -304,7 +304,7 @@ const StudyAbroadAttestationApostile = () => {
   return (
     <div className="min-h-screen bg-[#F7F7F6] text-[#31393C]">
       {/* Top Header */}
-      <header className="bg-[#3E96F4] text-white">
+      <header className="bg-[#FFC067] text-black">
         <div className="mx-auto max-w-7xl px-4 py-6 md:py-8">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
             <div>
@@ -447,13 +447,13 @@ const StudyAbroadAttestationApostile = () => {
               <div className="mt-4 grid grid-cols-2 gap-3">
                 <a
                   href="tel:+919820401375"
-                  className="rounded-xl px-4 py-2 text-center bg-[#3E96F4] text-white font-medium hover:opacity-90"
+                  className="rounded-xl px-4 py-2 text-center bg-[#FFC067] text-black font-medium hover:opacity-90"
                 >
                   Call 9820401375
                 </a>
                 <a
                   href="tel:+917738846286"
-                  className="rounded-xl px-4 py-2 text-center bg-[#3E96F4] text-white font-medium hover:opacity-90"
+                  className="rounded-xl px-4 py-2 text-center bg-[#FFC067] text-black font-medium hover:opacity-90"
                 >
                   Call 7738846286
                 </a>

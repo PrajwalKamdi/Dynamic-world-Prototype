@@ -177,7 +177,7 @@ const DynamicWorldInfo = () => {
   return (
     <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-5 space-y-6  sm:space-y-8 pb-5">
       {/* HERO */}
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 via-indigo-500 to-violet-600 text-white shadow-lg my-2">
+      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br bg-[#FFC067] text-black shadow-lg my-2">
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_top_left,white,transparent_50%),radial-gradient(ellipse_at_bottom_right,white,transparent_50%)]" />
         <div className="relative px-5 sm:px-8 py-7 sm:py-10">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5">

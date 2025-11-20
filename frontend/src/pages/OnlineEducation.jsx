@@ -16,14 +16,14 @@ const OnlineEducation = () => {
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-blue-700/70 backdrop-blur-[1px]" />
+          <div className="absolute inset-0 bg-[#FFC067]/70 backdrop-blur-[1px]" />
         </div>
         <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-10 py-16 sm:py-20 md:py-24">
           <div className="max-w-3xl text-center text-white mx-auto">
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
               What is Online Education?
             </h1>
-            <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-white/90">
+            <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-gray-900/90">
               Online education has revolutionized learning, breaking barriers
               and offering access to knowledge from anywhere. Discover how this
               modern approach is reshaping the future.
@@ -86,7 +86,7 @@ const OnlineEducation = () => {
               {["Online BBA", "Online Education", "Online MBA"].map((t) => (
                 <span
                   key={t}
-                  className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 ring-1 ring-blue-100"
+                  className="inline-flex items-center rounded-full bg-[#FFC067] px-3 py-1 text-xs font-semibold text-blue-700 ring-1 ring-blue-100"
                 >
                   {t}
                 </span>

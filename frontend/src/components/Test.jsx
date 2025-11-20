@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 /********************* Shared UI Primitives ************************/
 const SectionHeader = ({ title, subtitle, chip }) => (
-  <div className="bg-[#3E96F4] text-white">
+  <div className="bg-[#FFC067] text-black">
     <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-6">
       <div className="flex items-center gap-3">
         {/* {chip && (
@@ -16,7 +16,7 @@ const SectionHeader = ({ title, subtitle, chip }) => (
             {title}
           </h1>
           {subtitle && (
-            <p className="mt-1 text-sm sm:text-[15px] text-white/90">
+            <p className="mt-1 text-sm sm:text-[15px] text-gray-900/90">
               {subtitle}
             </p>
           )}
@@ -44,9 +44,9 @@ const Button = ({
     "inline-flex items-center justify-center rounded-2xl px-4 py-2 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-offset-2";
   const styles = {
     primary:
-      "bg-[#3E96F4] text-white hover:brightness-110 focus:ring-[#3E96F4]",
+      "bg-[#FFC067] text-black hover:brightness-110 focus:ring-[#3E96F4]",
     outline:
-      "border border-[#3E96F4] text-[#3E96F4] hover:bg-[#3E96F4]/10 focus:ring-[#3E96F4]",
+      "border border-[#3E96F4] text-[#3E96F4] hover:bg-[#FFC067]/10 focus:ring-[#3E96F4]",
     subtle:
       "bg-[#EDEEEB] text-[#31393C] hover:bg-[#CCC7BF]/60 focus:ring-[#3E96F4]",
   };
@@ -97,7 +97,7 @@ const BlogCard = ({ post }) => (
         <NavLink
           to={post.href}
           onClick={handleBtn}
-          className="p-2 rounded-2xl bg-blue-400/10 inline-block text-sm font-medium text-blue-700 hover:bg-blue-400/20"
+          className="p-2 rounded-2xl bg-[#FFC067]/10 inline-block text-sm font-medium text-blue-700 hover:bg-[#FFC067]/20"
         >
           Read article
         </NavLink>
@@ -319,7 +319,7 @@ export function BlogPage({ posts = demoPosts }) {
               className={[
                 "rounded-full px-3 py-1 text-xs font-medium",
                 selectedTag === tag
-                  ? "bg-[#3E96F4] text-white"
+                  ? "bg-[#FFC067] text-black"
                   : "bg-[#EDEEEB] text-[#31393C] hover:bg-[#CCC7BF]/70",
               ].join(" ")}
             >
@@ -357,7 +357,7 @@ export function BlogPage({ posts = demoPosts }) {
                     <span>{filtered[0].author}</span>
                     <span>•</span>
                   </div>
-                  <div className="mt-4 p-2 rounded-2xl bg-blue-400/10 inline-block text-sm font-medium text-blue-700 hover:bg-blue-400/20">
+                  <div className="mt-4 p-2 rounded-2xl bg-[#FFC067]/10 inline-block text-sm font-medium text-blue-700 hover:bg-[#FFC067]/20">
                     <NavLink to={filtered[0].href}>Read article</NavLink>
                   </div>
                 </div>
@@ -444,12 +444,12 @@ export function ResourcesPage({ data = resourceBlocks }) {
         {/* Webinars */}
 
         {/* CTA Strip */}
-        <div className="rounded-2xl bg-[#3E96F4] text-white p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div className="rounded-2xl bg-[#FFC067] text-black p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
             <h3 className="text-lg sm:text-xl font-bold">
               Confused about which course fits you best?
             </h3>
-            <p className="text-white/90 text-sm mt-1">
+            <p className="text-gray-900/90 text-sm mt-1">
               Talk to a counsellor and get a personalised shortlist today.
             </p>
           </div>

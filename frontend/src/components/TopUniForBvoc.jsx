@@ -27,7 +27,7 @@ const TopUniForBvoc = () => {
   return (
     <section className="w-full bg-[#EDEEEB] text-[#31393C] py-8">
       {/* Header */}
-      <header className="bg-[#3E96F4] text-white text-xl lg:text-3xl font-semibold px-6 lg:px-10 py-6 rounded-b-2xl shadow-sm">
+      <header className="bg-[#FFC067] text-black text-xl lg:text-3xl font-semibold px-6 lg:px-10 py-6 rounded-b-2xl shadow-sm">
         Top Indian Universities for B.Voc
       </header>
 
@@ -111,7 +111,7 @@ const TopUniForBvoc = () => {
                       href={site}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-[#3E96F4] text-white text-sm px-4 py-2 rounded-lg shadow-sm hover:bg-[#3188e3] transition"
+                      className="bg-[#FFC067] text-black text-sm px-4 py-2 rounded-lg shadow-sm hover:bg-[#3188e3] transition"
                     >
                       Visit Website
                     </a>

@@ -62,8 +62,8 @@ const GHRaisoni02 = () => {
             </tbody>
           </table>
         </section>
-        <section className="bg-[#3E96F4] py-12 px-6 text-center rounded-2xl my-5">
-          <h2 className="text-xl font-semibold text-white mb-3">
+        <section className="bg-[#FFC067] text-black py-12 px-6 text-center rounded-2xl my-5">
+          <h2 className="text-xl font-semibold text-black mb-3">
             Need more info about G.H. Raisoni International Skill Tech
             University?
           </h2>

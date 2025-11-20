@@ -53,7 +53,7 @@ const Navbar = () => {
   const linkClass = ({ isActive }) =>
     `relative text-[15px] font-medium transition-colors duration-200
      after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:-bottom-1
-     after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full
+     after:bg-[#FFC067] text-black after:transition-all after:duration-300 hover:after:w-full
      focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:rounded
      ${
        isActive
@@ -132,7 +132,7 @@ const Navbar = () => {
                             to={`/services/${s
                               .toLowerCase()
                               .replace(/\s+/g, "-")}`}
-                            className="block px-3 py-2 text-[13px] rounded-lg text-slate-700 hover:bg-blue-50 hover:text-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
+                            className="block px-3 py-2 text-[13px] rounded-lg text-slate-700 hover:bg-[#FFC067] hover:text-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
                             role="menuitem"
                             onClick={() => setServicesOpenDesktop(false)}
                           >

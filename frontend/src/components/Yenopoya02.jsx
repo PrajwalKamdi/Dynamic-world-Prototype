@@ -36,7 +36,7 @@ const Yenopoya02 = () => {
       </p>
 
       {/* YouTube Video with Heading */}
-      <div className="w-full bg-[#3E96F4] rounded-lg overflow-hidden shadow-lg flex flex-col items-center p-6 mb-6">
+      <div className="w-full bg-[#FFC067] rounded-lg overflow-hidden shadow-lg flex flex-col items-center p-6 mb-6">
         {/* Heading above video */}
         <h2 className="text-white text-xl sm:text-2xl font-bold mb-4 text-center">
           Need more info about Yenepoya University?

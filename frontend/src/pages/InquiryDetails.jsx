@@ -20,14 +20,14 @@ export default function InquiryDetails({
       <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 bg-white rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl overflow-hidden">
         {/* Left: Information & CTAs */}
         <section
-          className="text-white flex flex-col justify-center items-center p-6 sm:p-8 lg:p-10 bg-blue-600"
+          className="text-black flex flex-col justify-center items-center p-6 sm:p-8 lg:p-10 bg-[#FFC067]"
           // style={{ background: COLORS.brand }}
         >
           <div className="w-full max-w-prose text-center">
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold">
               Get Expert Admission Guidance
             </h2>
-            <p className="mt-3 sm:mt-4 text-sm sm:text-base text-white/90 leading-relaxed">
+            <p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-900/90 leading-relaxed">
               Complete Your Education Online Anytime, Anywhere, and at Any Age!
               <br className="hidden sm:block" />
               Find{" "}
@@ -45,7 +45,7 @@ export default function InquiryDetails({
                 aria-label="Call counsellor"
                 className="group inline-flex items-center justify-center gap-2 px-5 sm:px-7 py-2.5 sm:py-3 rounded-xl bg-white text-[#3E96F4] font-semibold text-sm sm:text-base shadow-md ring-1 ring-gray-200 hover:ring-white/60 hover:shadow-lg hover:scale-[1.03] focus:outline-none focus-visible:ring-2 focus-visible:ring-white transition-all duration-300"
               >
-                <span className="inline-flex items-center justify-center bg-[#3E96F4]/10 p-1.5 rounded-full">
+                <span className="inline-flex items-center justify-center bg-[#FFC067]/10 p-1.5 rounded-full">
                   <Phone
                     size={18}
                     className="text-[#3E96F4] group-hover:rotate-12 transition-transform duration-200"
@@ -72,7 +72,7 @@ export default function InquiryDetails({
               <h3 className="text-lg sm:text-xl lg:text-2xl font-bold tracking-wide">
                 {phone.replace(/^\+91/, "+91 ")}
               </h3>
-              <p className="text-xs sm:text-sm text-white/80 mt-1">{hours}</p>
+              <p className="text-xs sm:text-sm text-gray-900/80 mt-1">{hours}</p>
             </div>
           </div>
         </section>

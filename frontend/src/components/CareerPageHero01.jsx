@@ -11,7 +11,7 @@ const CareerPageHero01 = () => {
       }}
     >
       {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-blue-700/80"></div>
+      <div className="absolute inset-0 bg-[#FFC067]/80"></div>
       
       {/* Content Container */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -28,7 +28,7 @@ const CareerPageHero01 = () => {
             
             {/* Email Section */}
             <div className="space-y-3">
-              <p className="text-white font-medium text-base">Mail Us At:</p>
+              <p className="text-gray-900 font-medium text-base">Mail Us At:</p>
               <a 
                 href="mailto:hire@dynamicworld.in"
                 className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-2.5 rounded-md transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"

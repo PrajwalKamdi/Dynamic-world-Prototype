@@ -5,7 +5,7 @@ import DynamicForm from "../pages/DynamicForm";
 const OrientalUniversity01 = () => {
   return (
     <div className="min-h-screen w-full bg-white text-[#31393C]">
-      <div className="bg-[#3E96F4] text-white">
+      <div className="bg-[#FFC067] text-black">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-6">
           <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
             {/* Logo */}
@@ -23,7 +23,7 @@ const OrientalUniversity01 = () => {
                 <h1 className="text-xl lg:text-3xl font-bold leading-tight">
                   Oriental University:
                 </h1>
-                <p className="mt-1 text-xl  text-white/80">
+                <p className="mt-1 text-xl  text-gray-900/80">
                   Admission {new Date().getFullYear()} - About, Courses &
                   Ranking
                 </p>

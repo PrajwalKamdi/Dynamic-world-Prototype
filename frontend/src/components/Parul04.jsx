@@ -102,7 +102,7 @@ const Parul04 = () => {
                   onClick={() => paginate(num)}
                   className={`px-3 py-2 rounded-md border border-[#dee2e6] transition hover:bg-[#e9ecef] ${
                     currentPage === num
-                      ? 'bg-[#3E96F4] text-white border-[#3E96F4]'
+                      ? 'bg-[#FFC067] text-black border-[#3E96F4]'
                       : 'bg-white text-[#3E96F4]'
                   }`}
                   aria-current={currentPage === num ? 'page' : undefined}

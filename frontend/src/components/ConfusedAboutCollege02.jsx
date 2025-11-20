@@ -220,7 +220,7 @@ const ConfusedAboutCollege02 = () => {
       <div className="bg-gradient-to-br from-blue-50 to-indigo-100  py-4 sm:py-6 lg:py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           {/* Confused About College Card */}
-          <div className="bg-blue-600 rounded-xl p-4 sm:p-6 mb-6 sm:mb-8 w-full shadow-2xl border border-blue-500/20">
+          <div className="bg-[#FFC067] rounded-xl p-4 sm:p-6 mb-6 sm:mb-8 w-full shadow-2xl border border-blue-500/20">
             <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6">
               {/* Left Side - Text Content */}
               <div className="flex-1 space-y-3 sm:space-y-4 text-left w-full lg:w-auto">

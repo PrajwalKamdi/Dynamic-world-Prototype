@@ -5,7 +5,7 @@ import { CheckCircle } from "lucide-react";
 // The main component that renders the Work Visa service details.
 const VicaServices1 = () => {
   // --- COLOR PALETTE from previous component ---
-  const vibrantBlue = "bg-[#3E96F4]"; // Used for main background
+  const vibrantBlue = "bg-[#FFC067]"; // Used for main background
   // const darkCharcoal = "bg-[#31393C]"; // Removed, no buttons
 
   // Data provided by the user for the Work Visa Service details

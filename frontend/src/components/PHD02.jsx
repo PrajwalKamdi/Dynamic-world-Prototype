@@ -155,9 +155,9 @@ export default function PHD02() {
         </h3>
         <div className="overflow-x-auto mb-8 rounded-2xl">
           <table className="min-w-full border border-gray-300 rounded-lg">
-            <thead className="bg-[#3E96F4] text-[#31393C] border-b border-gray-300">
+            <thead className="bg-[#FFC067] text-[#31393C] border-b border-gray-300">
               <tr>
-                <th className="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wide text-white">
+                <th className="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wide text-black">
                   University Name
                 </th>
                 <th className="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wide text-white">

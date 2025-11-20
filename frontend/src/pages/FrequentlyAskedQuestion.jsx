@@ -61,7 +61,7 @@ const FAQAccordion = () => {
                   className={`w-full flex items-center justify-between gap-3 text-left font-medium focus:outline-none transition-colors duration-300
                     ${
                       isActive
-                        ? "bg-[#3E96F4] text-white"
+                        ? "bg-[#FFC067] text-black"
                         : "bg-white text-slate-800"
                     }
                   `}

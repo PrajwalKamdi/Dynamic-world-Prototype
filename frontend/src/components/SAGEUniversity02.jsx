@@ -127,7 +127,7 @@ export default function SAGEUniversity02() {
         </div>
 
         {/* Contact Section */}
-        <div className="bg-[#3E96F4] text-white rounded-2xl p-6 md:p-8">
+        <div className="bg-[#FFC067] text-black rounded-2xl p-6 md:p-8">
           <h3 className="text-xl font-semibold mb-6 text-center">
             Need more info about SAGE University?
           </h3>

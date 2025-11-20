@@ -116,7 +116,7 @@ const Yenepoya03 = () => {
 
         {/* Highlights Table / Cards */}
         <div class="w-full text-sm max-w-3xl mx-auto mt-8">
-          <div class="bg-[#3E96F4] text-white rounded-t-2xl px-5 py-4">
+          <div class="bg-[#FFC067] text-black rounded-t-2xl px-5 py-4">
             <h2 class="text-lg md:text-xl font-semibold">
               Yenepoya University — Admission Highlights 2024
             </h2>
@@ -160,7 +160,7 @@ const Yenepoya03 = () => {
 
         {/* Eligibility & Selection */}
         <div class="w-full max-w-6xl mx-auto mt-8 text-sm">
-          <div class="bg-[#3E96F4] text-white rounded-t-2xl px-5 py-4">
+          <div class="bg-[#FFC067] text-black rounded-t-2xl px-5 py-4">
             <h2 class="text-lg md:text-xl font-semibold">
               Yenepoya University — Course Eligibility & Selection
             </h2>
@@ -217,7 +217,7 @@ const Yenepoya03 = () => {
           </div>
         </div>
         <div class="w-full max-w-5xl mx-auto mt-8 text-sm">
-          <div class="bg-[#3E96F4] text-white rounded-t-2xl px-5 py-3">
+          <div class="bg-[#FFC067] text-black rounded-t-2xl px-5 py-3">
             <h2 class="text-base md:text-lg font-semibold">
               Yenepoya University — Fees and ROI
             </h2>

@@ -64,9 +64,9 @@ const Navsahyadri02 = () => {
           , NGI upholds its reputation as a hub of academic excellence and
           innovation.
         </p>
-        <div className="bg-[#3E96F4] h-[60%] pb-5  rounded-2xl">
+        <div className="bg-[#FFC067] text-black h-[60%] pb-5  rounded-2xl">
           <div className="mx-auto px-4 sm:px-6 md:px-8">
-            <h3 className="text-xl sm:text-2xl text-center text-white font-semibold py-5">
+            <h3 className="text-xl sm:text-2xl text-center text-black font-semibold py-5">
               Need more info about Chhatrapati Shivaji Maharaj University?
             </h3>
             {/* Card */}

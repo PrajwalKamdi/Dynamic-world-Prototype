@@ -82,7 +82,7 @@ const Parul02 = () => {
       </div>
 
       {/* Video Section */}
-      <section className="bg-[#3E96F4]">
+      <section className="bg-[#FFC067]">
         <div className="mx-auto max-w-6xl px-6 py-10 text-center">
           <h2 className="text-white text-2xl md:text-3xl font-bold mb-6">
             Need More Info About Parul University?

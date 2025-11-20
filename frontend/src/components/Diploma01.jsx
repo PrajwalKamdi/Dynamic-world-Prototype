@@ -7,7 +7,7 @@ const Diploma01 = () => {
   return (
     <div className="w-full bg-white">
       {/* Top ribbon (same shell as DVOC) */}
-      <div className="bg-[#3E96F4] text-white">
+      <div className="bg-[#FFC067] text-black">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 py-6">
           {/* Chip */}
           <span className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-xs font-medium text-[#31393C]">
@@ -19,7 +19,7 @@ const Diploma01 = () => {
             <h1 className="text-2xl sm:text-3xl font-bold leading-tight">
               Diploma Courses
             </h1>
-            <p className="mt-1 text-sm sm:text-[15px] text-white/80">
+            <p className="mt-1 text-sm sm:text-[15px] text-gray-900/80">
               Find top diploma programs across India and get admission done.
             </p>
           </div>
@@ -32,7 +32,7 @@ const Diploma01 = () => {
           <div className="px-4 lg:px-8 py-5 text-base">
             {/* Duration pills */}
             <div className="flex flex-wrap items-center gap-2">
-              <span className="text-[11px] sm:text-xs px-2.5 py-1 rounded-full bg-blue-50 text-[#3E96F4] border border-[#3E96F4]/20">
+              <span className="text-[11px] sm:text-xs px-2.5 py-1 rounded-full bg-[#FFC067] text-[#3E96F4] border border-[#3E96F4]/20">
                 Duration
               </span>
               {["3 Months", "6 Months", "12 Months"].map((d) => (
