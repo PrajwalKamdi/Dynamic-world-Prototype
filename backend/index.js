@@ -14,6 +14,7 @@ import { onlineUniversityRouter } from './routes/onlineUniversityRouter.js';
 import { onlineUniversityRouterV2 } from './routes/onlineUniversityRouterV2.js';
 import skillCourseRouter from './routes/skillCourseRoute.js';
 import regularEducationRouter from './routes/regularEducationRouter.js';
+import newsRouter from './routes/newsRoute.js';
 configDotenv();
 const server = express();
 const PORT = process.env.PORT;
@@ -30,9 +31,10 @@ server.use('/api/v1/', EngineeringRouter)
 server.use('/api/v1', countryRouter)
 server.use('/api/v1', skillCourseRouter)
 server.use('/api/v1/', dvoc_mvoc_bvoc_Router);
-server.use('/api/v1/' , mbbsInAbroadRouter)
+server.use('/api/v1/', mbbsInAbroadRouter)
 server.use('/api/v1/', mbaInIndiaRouter)
+server.use('/api/v1/', newsRouter)
 
-server.listen(PORT,'0.0.0.0',() => {
+server.listen(PORT, '0.0.0.0', () => {
   console.log("Setup Successful!")
 });
