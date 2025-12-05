@@ -33,3 +33,26 @@ export const getAllNews = async (req, res) => {
     })
   }
 }
+export const deleteNews = async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    const deletedNews = await News.findByIdAndDelete(id);
+    
+    if (!deletedNews) {
+      return res.status(404).json({
+        message: "News not found!",
+      });
+    }
+
+    res.status(200).json({
+      message: "News deleted successfully!",
+      data: deletedNews,
+    });
+  } catch (error) {
+    res.status(500).json({
+      message: "Failed to delete the news!",
+      error: error.message,
+    });
+  }
+};
